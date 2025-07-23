@@ -21,9 +21,9 @@
 
 .progress-fill {
     height: 100%;
-    /* Forced green color and initial width for troubleshooting */
+    /* Keep !important for background-color to ensure green, remove for width */
     background-color: #28a745 !important; /* Green color */
-    width: 0 !important; /* Will be overwritten by JS, but ensures it starts at 0 */
+    width: 0; /* Removed !important here - JS will set this */
     position: absolute; /* Position filling from the left */
     top: 0;
     left: 0;
