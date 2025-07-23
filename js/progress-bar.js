@@ -9,21 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const percentText = bar.querySelector('.progress-percent');
 
         if (fill && percentText && progress) {
-            // Set the width of the fill
+            // Set the width of the fill immediately for non-animated display or fallback
             fill.style.width = `${progress}%`;
             
             // Update the percentage text
             percentText.textContent = `${progress}%`;
-
-            // Optional: You could add a check if the percentage text color needs to change for readability
-            // If the fill covers the text, you might change text color to white
-            // For now, it's positioned to the right, so current color should be fine.
         }
     });
 
     // Optional: Add intersection observer for animation on scroll if desired
-    // This makes the animation trigger when the section comes into view
-    const projectsSection = document.getElementById('projects');
+    // FIX: Changed 'projects' to 'current-projects' to match the HTML ID
+    const projectsSection = document.getElementById('current-projects'); 
     if (projectsSection) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -36,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             fill.style.width = `${progress}%`; // Trigger animation
                         }
                     });
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    // Only unobserve if you want the animation to play once per page load
+                    // If you want it to re-play every time it scrolls into view, remove this line
+                    observer.unobserve(entry.target); 
                 }
             });
         }, { threshold: 0.2 }); // Trigger when 20% of the section is visible
