@@ -21,8 +21,8 @@
 
 .progress-fill {
     height: 100%;
-    background-color: #28a745; /* Changed to green! (Bootstrap success green) */
-    width: 0; /* Initial width, will be set by JS */
+    background-color: #28a745 !important; /* Changed to green and added !important */
+    width: 0 !important; /* Start at 0, JS will override. Added !important for troubleshooting */
     position: absolute; /* Position filling from the left */
     top: 0;
     left: 0;
