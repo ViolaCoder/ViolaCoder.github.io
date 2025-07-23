@@ -21,7 +21,7 @@
 
 .progress-fill {
     height: 100%;
-    background-color: #007bff; /* Color of the filled portion of the bar (Bootstrap primary blue) */
+    background-color: #28a745; /* Changed to green! (Bootstrap success green) */
     width: 0; /* Initial width, will be set by JS */
     position: absolute; /* Position filling from the left */
     top: 0;
