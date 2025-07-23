@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (fill && percentText && progress) {
             // Set the width of the fill immediately for non-animated display or fallback
+            // This is the primary setter if IntersectionObserver doesn't fire immediately
             fill.style.width = `${progress}%`;
             
             // Update the percentage text
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Optional: Add intersection observer for animation on scroll if desired
-    // FIX: Changed 'projects' to 'current-projects' to match the HTML ID
+    // FIX: Corrected ID to 'current-projects' to match the HTML section ID
     const projectsSection = document.getElementById('current-projects'); 
     if (projectsSection) {
         const observer = new IntersectionObserver((entries) => {
@@ -29,11 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         const progress = bar.getAttribute('data-progress');
                         const fill = bar.querySelector('.progress-fill');
                         if (fill && progress) {
-                            fill.style.width = `${progress}%`; // Trigger animation
+                            fill.style.width = `${progress}%`; // Trigger animation when in view
                         }
                     });
-                    // Only unobserve if you want the animation to play once per page load
-                    // If you want it to re-play every time it scrolls into view, remove this line
+                    // Stop observing once animated to prevent re-animation on subsequent scrolls
                     observer.unobserve(entry.target); 
                 }
             });
