@@ -11016,13 +11016,13 @@ section.resume-section .resume-section-content {
 /* Specific style for the Letterboxd logo button (since it's a pre-colored circular image) */
 .letterboxd-icon-link {
     display: inline-flex; /* Use flex for centering content */
-    height: 20rem; /* Match other book-page-social-icon size */
-    width: 20rem; /* Match other book-page-social-icon size */
+    height: 2.5rem; /* Match other book-page-social-icon size */
+    width: 2.5rem; /* Match other book-page-social-icon size */
     border-radius: 100%; /* Ensure the clickable area is circular */
     overflow: hidden; /* Ensure image content stays within the circle */
     align-items: center; /* Center image vertically */
     justify-content: center; /* Center image horizontally */
-    flex-shrink: 0; /* Prevent from shrinking */
+    flex-shrink: 1; /* Prevent from shrinking */
     background-color: transparent; /* No background color needed, the image itself provides the circle */
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
