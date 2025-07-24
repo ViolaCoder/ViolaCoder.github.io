@@ -11016,8 +11016,8 @@ section.resume-section .resume-section-content {
 /* Specific style for the Letterboxd logo button (since it's a pre-colored circular image) */
 .letterboxd-icon-link {
     display: inline-flex; /* Use flex for centering content */
-    height: 3.5rem; /* Match other book-page-social-icon size */
-    width: 3.5rem; /* Match other book-page-social-icon size */
+    height: 20rem; /* Match other book-page-social-icon size */
+    width: 20rem; /* Match other book-page-social-icon size */
     border-radius: 100%; /* Ensure the clickable area is circular */
     overflow: hidden; /* Ensure image content stays within the circle */
     align-items: center; /* Center image vertically */
