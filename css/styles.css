@@ -10970,3 +10970,45 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* --- Custom Social Icons for Interests Section (Book Pages) --- */
+.book-page-social-icons {
+    display: flex; /* Arrange icons in a row */
+    justify-content: center; /* Center icons horizontally within the page */
+    margin-top: 15px; /* Space from text above */
+    margin-bottom: 5px; /* Space from text below */
+    gap: 10px; /* Space between individual icons */
+}
+
+.book-page-social-icon {
+    display: inline-flex; /* Use inline-flex for proper sizing and alignment */
+    height: 2.5rem; /* Define the size of the circular button */
+    width: 2.5rem; /* Define the size of the circular button */
+    background-color: #495057; /* Default background color (dark grey) */
+    color: #fff !important; /* Color for Font Awesome icons (white) */
+    border-radius: 100%; /* Make it a circle */
+    text-align: center;
+    font-size: 1.25rem; /* Size of the Font Awesome icon itself */
+    line-height: 2.5rem; /* Vertically center the Font Awesome icon */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    flex-shrink: 0; /* Prevent icons from shrinking on small screens */
+}
+
+.book-page-social-icon:hover {
+    background-color: var(--primary); /* Change background color on hover */
+}
+
+/* Specific brand colors for icons (optional, but makes them recognizable) */
+.book-page-social-icon .fa-youtube { background-color: #FF0000; } /* YouTube red */
+.book-page-social-icon .fa-goodreads-g { background-color: #633324; } /* Goodreads brown */
+
+/* Styles for image-based social icons (like Letterboxd) */
+.book-page-social-icon img.book-page-social-img {
+    height: 1.6rem; /* Adjust image size relative to button size */
+    width: 1.6rem; /* Keep image square */
+    object-fit: contain; /* Ensure logo fits within the space without cropping */
+    border-radius: 0; /* The parent <a> tag handles the circle, not the image */
+    background-color: transparent; /* Ensure image background is transparent (if needed) */
+}
