@@ -11013,30 +11013,3 @@ section.resume-section .resume-section-content {
     border-radius: 0;
     background-color: transparent; /* Ensures the image doesn't have its own background, allowing the parent <a> to show its color */
 }
-/* Specific style for the Letterboxd logo button (since it's a pre-colored circular image) */
-.letterboxd-icon-link {
-    display: inline-flex; /* Use flex for centering content */
-    height: 2.5rem; /* Match other book-page-social-icon size */
-    width: 2.5rem; /* Match other book-page-social-icon size */
-    border-radius: 100%; /* Ensure the clickable area is circular */
-    overflow: hidden; /* Ensure image content stays within the circle */
-    align-items: center; /* Center image vertically */
-    justify-content: center; /* Center image horizontally */
-    flex-shrink: 1; /* Prevent from shrinking */
-    background-color: transparent; /* No background color needed, the image itself provides the circle */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
-}
-
-.letterboxd-icon-link img {
-    height: 100%; /* Make the image fill the <a> container */
-    width: 100%; /* Make the image fill the <a> container */
-    object-fit: cover; /* Ensure the image covers the circular area perfectly */
-    border-radius: 100%; /* Ensure the image itself is rendered as a circle */
-    display: block; /* Remove any extra space below the image */
-}
-
-.letterboxd-icon-link:hover {
-    /* Apply a hover effect that works with a pre-colored solid image */
-    /* This will draw a primary-colored ring around the icon on hover */
-    box-shadow: 0 0 0 3px var(--primary); 
-}
