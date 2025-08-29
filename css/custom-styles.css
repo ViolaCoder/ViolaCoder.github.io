@@ -85,16 +85,20 @@
     }
 }
 
-/* CSS Grid for the new Experience Section Layout */
-@media (min-width: 768px) {
-    .experience-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr; /* Left column is twice as wide as the right */
-        gap: 20px; /* Space between the columns */
-    }
+/* New CSS Grid for the Experience Section */
+.experience-content-grid {
+    display: grid;
+    /* On large screens, set a specific column width */
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+}
 
-    /* Adjust the alignment of the date in the second column */
-    .experience-grid-col-2 .experience-date {
-        text-align: right; /* Aligns the date to the right within its column */
+/* For small screens, use a single column */
+@media (max-width: 767.98px) {
+    .experience-content-grid {
+        grid-template-columns: 1fr;
+    }
+    .experience-details {
+        margin-top: 1rem;
     }
 }
