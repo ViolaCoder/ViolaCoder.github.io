@@ -69,34 +69,34 @@
                     <div class="experience-details">
                         <div class="text-primary experience-date">September 2024 - Present</div>
                         <button class="btn btn-outline-secondary btn-sm mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseErgonomicsDetail" aria-expanded="false" aria-controls="collapseErgonomicsDetail">
-                            Expand for Documentation <i class="fas fa-chevron-down toggle-icon"></i>
+                            Ergonomic Model Documentation <i class="fas fa-chevron-down toggle-icon"></i>
                         </button>
                         <div class="collapse mt-3" id="collapseErgonomicsDetail">
                             <div class="p-3 bg-light rounded project-documentation-box">
-                                <h4>Detailed Documentation & Model Evolution</h4>
-                                <p>This section illustrates the design evolution of one of the models for the Ergonomics Project. See the progression from initial concept to refined design.</p>
+                                <h4>Purpose/Goal</h4>
+                                <p>The goal of the model is to accurately convert a scan of a real person into a program like SolidWorks to ensure the body fits within clearance requirements.</p>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 1: Initial Concept Sketch</h5>
+                                    <h5 class="mb-3">Step 1: Lidar Scan</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_concept_sketch.jpg" alt="Initial Concept Sketch" style="max-width: 500px; height: auto;">
-                                    <p>This is the very first conceptual sketch, focusing on ergonomic principles and basic functionality. It outlines the preliminary form and key interaction points.</p>
+                                    <p>The scan is taken using a lidar camera, which comes with many of the newer apple products. The scan was taken on the application Polycam, usuing a free trial.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 2: First CAD Model (Static)</h5>
+                                    <h5 class="mb-3">Step 2: Scan to SolidWorkds</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_cad_iteration1.jpg" alt="First CAD Iteration" style="max-width: 500px; height: auto;">
-                                    <p>Moving from sketch to a static CAD model, this iteration established the main dimensions and component placement, allowing for early interference checks.</p>
+                                    <p>Scans come in a crude state. Mesh simplification happens in MeshLab to decrease the number of triangles to decrease processing time in SolidWorks. Unfortunately, the scans, when uploaded are not properly scaled. This was an aftersight, as accurate measurements of arms and legs were necessary to scale the models up. In the future, it will be recommened to hold a ruler between the hands to have a simple method of scaling.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 3: Dynamic Mechanism (GIF)</h5>
+                                    <h5 class="mb-3">Step 3: Creating Joints</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_mechanism.gif" alt="Dynamic Mechanism GIF" style="max-width: 500px; height: auto;">
-                                    <p>This GIF demonstrates the initial movement and articulation of the model's key mechanism, ensuring smooth operation and identifying potential kinematic issues.</p>
+                                    <p>This process is arduious and tedious, but extrememly necessary to create a versatile model. I spent hours trying to discover a way to create the most efficient method. The first was creating numerous planes to intersect the model and to loft the sketches to create a simple body part. The only issue with this was the time it took, so I tried to get a human model online and scale up the body parts accordingly, but that proved to be inefficient as well. I settled upon using Fusion 360 to split the mesh into the respective body parts and treat it as a solid body in SolidWorks. From there, I created an assembly, and used ball joints in order to mate the parts together.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 4: Refined Design with Simulation Highlights</h5>
+                                    <h5 class="mb-3">Step 4: Clearence</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_refined_simulation.gif" alt="Refined Design Simulation" style="max-width: 500px; height: auto;">
-                                    <p>The final design iteration, incorporating feedback from simulations and structural analysis. This GIF/image highlights critical stress points or improved performance metrics.</p>
+                                    <p>The model itself is great for determining the fit inside the car, but to pass rules, there must be at least a certain amount of distance between each body part and the car. Using the information provided on the rules sheet, created a plane in the middle of each body part, created an intersection sketch, and drew perpendicular lines off of the sketch all of the same distance for clearance. I then spline sketched to create a sort of projection. I then extruded the sketch past the body part by the required clearance. A failed method I tried was to scale up the body part, such that it will be the required clearance, but scaling creates expansion, which alters distance relative to the initial part. I scaled the helmet for head clearance, and that works becasue the only required part is spherical.</p>
                                 </div>
                                 <h4 class="mt-5">Additional Project Links</h4>
                                 <ul>
