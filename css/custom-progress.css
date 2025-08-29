@@ -58,6 +58,68 @@
     margin-bottom: 1.5rem !important; /* Ensure enough space after separator */
 }
 
+
+
+
+/* Styles for current projects in About section */
+.project-summary-item {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+    border-left: 4px solid #f26522; /* Primary color border on left */
+}
+
+.project-summary-item .project-summary-title {
+    font-size: 1rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.project-summary-item .project-status-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Smaller Progress Bar specific to the About section */
+.progress-container-small {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-small {
+    height: 100%;
+    background-color: #f26522;
+    width: 0; /* JS will set this */
+    border-radius: 5px;
+    position: relative;
+    transition: width 0.8s ease-in-out;
+}
+
+.progress-fill-small {
+    display: block;
+    height: 100%;
+    background-color: #f26522;
+    border-radius: 5px;
+}
+
+.progress-percent-small {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
 .d-flex.flex-column.flex-md-row.justify-content-between.mb-5:last-child {
     border-bottom: none; /* No border for the last project */
     margin-bottom: 0 !important;
