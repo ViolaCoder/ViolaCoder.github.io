@@ -77,28 +77,6 @@
     color: #343a40; /* Dark text for readability */
 }
 
-/* Optional: Add page curl effect (more advanced CSS) */
-/* This requires a bit more complex CSS, but gives a true book feel */
-/*
-.book-page::before, .book-page::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 30px;
-    background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 50%);
-    z-index: -1;
-    transform: skewY(-2deg);
-    border-bottom-right-radius: 50% 20px;
-}
-.book-page::after {
-    left: 50%;
-    transform: skewY(2deg);
-    background: linear-gradient(to left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 50%);
-    border-bottom-left-radius: 50% 20px;
-}
-*/
-
 /* Responsive adjustments for book pages */
 @media (max-width: 768px) {
     .book-page {
@@ -107,24 +85,15 @@
     }
 }
 
-/* custom-styles.css */
-
-/* ... (Your existing custom styles) ... */
-
 /* CSS Grid for the new Experience Section Layout */
-.experience-entry {
-    /* For screens wider than 768px, use a grid layout */
-    @media (min-width: 768px) {
+/* We will apply the grid layout only on medium and larger screens */
+@media (min-width: 768px) {
+    .experience-grid {
         display: grid;
         grid-template-columns: 2fr 1fr; /* This creates a two-column grid: left column is twice as wide as the right */
         gap: 20px; /* Space between the columns */
     }
 }
 
-/* On smaller screens, the grid will automatically stack, but we can explicitly disable it */
-.experience-grid-col-1,
-.experience-grid-col-2 {
-    /* Ensure no special positioning is applied on smaller screens */
-    display: block;
-    width: 100%;
-}
+/* On smaller screens, the elements will automatically stack as normal. */
+/* No need for explicit mobile rules in this case. */
