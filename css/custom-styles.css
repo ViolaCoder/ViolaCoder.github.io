@@ -107,31 +107,28 @@
     }
 }
 
-/* custom-styles.css */
-
-/* ... (Your existing custom styles) ... */
-
-/* New CSS to ensure the dropdown wrapper is properly positioned */
+/* Custom styles for the dropdown in the experience section */
 .dropdown-wrapper {
-    /* Set the dropdown to be a flex container */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align the button to the right */
-    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1rem;
 }
 
-/* This styles the collapsible content block */
 .dropdown-content {
-    /* Make the collapsed content expand from the right */
-    width: 100%;
+    /* Style for the collapsible box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .project-documentation-box {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Ensure images don't exceed their column width */
-.col-md-6 .img-fluid {
-    width: 100%;
-    height: auto;
+/* You can still keep your other custom styles from your original code */
+/* For example: */
+.project-item {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+/* ... etc. */
