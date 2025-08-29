@@ -107,28 +107,8 @@
     }
 }
 
-/* Custom styles for the dropdown in the experience section */
-.dropdown-wrapper {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 1rem;
-}
 
-.dropdown-content {
-    /* Style for the collapsible box */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .dropdown-in-whitespace button {
+        width: 100%; /* Ensure the button itself also fills the width */
+    }
 }
-
-.project-documentation-box {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* You can still keep your other custom styles from your original code */
-/* For example: */
-.project-item {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-/* ... etc. */
