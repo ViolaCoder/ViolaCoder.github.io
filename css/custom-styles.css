@@ -112,3 +112,64 @@
         width: 100%; /* Ensure the button itself also fills the width */
     }
 }
+
+
+/* custom-styles.css */
+
+/* This container will control the positioning of the dropdown */
+.project-block {
+    position: relative; /* All absolutely positioned children will be relative to this div */
+    display: block;
+}
+
+/* This is the new container for the dropdown button and its content */
+.dropdown-container {
+    position: absolute; /* Takes the dropdown out of the normal document flow */
+    top: 0; /* Positions it at the top of the .project-block */
+    right: 0; /* Positions it at the far right of the .project-block */
+    width: 50%; /* Give it a width to define its space */
+    max-width: 300px; /* Adjust this to control how wide the box is */
+    z-index: 10; /* Ensure it stays above other content if necessary */
+}
+
+/* This styles the collapsible content block */
+.dropdown-content {
+    position: absolute; /* Position relative to the dropdown-container */
+    right: 0;
+    width: 100%;
+    max-width: 300px; /* Match the width of the dropdown-container */
+}
+
+/* This ensures the image and text wrap around the dropdown on larger screens */
+.project-block p.description-text {
+    /* Use floating to make text flow around the dropdown container */
+    float: left;
+    width: 50%;
+    margin-right: 20px; /* Add some space between text and dropdown */
+}
+
+/* Clear the float so the image below doesn't get messed up */
+.project-block img.img-fluid {
+    clear: both;
+}
+
+/* This is a simple fix to ensure the dropdown content has a nice shadow */
+.project-documentation-box {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Media query for mobile to stack elements and prevent strange overflow */
+@media (max-width: 767.98px) {
+    .project-block p.description-text {
+        float: none; /* Disable float on mobile */
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem; /* Restore bottom margin for spacing */
+    }
+    
+    .dropdown-container {
+        position: static; /* Let the dropdown flow normally on mobile */
+        width: 100%;
+        max-width: none;
+    }
+}
