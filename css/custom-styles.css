@@ -114,61 +114,42 @@
 }
 
 
-/* custom-styles.css */
+/* Custom styles for the dropdown in the experience section */
 
-/* This container will control the positioning of the dropdown */
-.project-block {
-    position: relative; /* All absolutely positioned children will be relative to this div */
-    display: block;
+/* This wrapper creates a new positioning context for the dropdown */
+.experience-entry-with-dropdown {
+    position: relative;
 }
 
-/* This is the new container for the dropdown button and its content */
-.dropdown-container {
-    position: absolute; /* Takes the dropdown out of the normal document flow */
-    top: 0; /* Positions it at the top of the .project-block */
-    right: 0; /* Positions it at the far right of the .project-block */
-    width: 50%; /* Give it a width to define its space */
-    max-width: 300px; /* Adjust this to control how wide the box is */
-    z-index: 10; /* Ensure it stays above other content if necessary */
-}
-
-/* This styles the collapsible content block */
-.dropdown-content {
-    position: absolute; /* Position relative to the dropdown-container */
+/* This container positions the dropdown button and its content precisely */
+.dropdown-wrapper {
+    position: absolute;
+    top: 5px; /* Adjust this value to move the button up or down */
     right: 0;
     width: 100%;
-    max-width: 300px; /* Match the width of the dropdown-container */
+    max-width: 300px; /* Adjust this to control the max width of the dropdown */
+    z-index: 10;
 }
 
-/* This ensures the image and text wrap around the dropdown on larger screens */
-.project-block p.description-text {
-    /* Use floating to make text flow around the dropdown container */
-    float: left;
-    width: 50%;
-    margin-right: 20px; /* Add some space between text and dropdown */
+/* This ensures the collapsible content expands to the left from the right edge */
+.dropdown-wrapper .dropdown-content {
+    right: 0;
+    width: 100%;
+    position: absolute;
+    top: 35px; /* Adjust this to control the vertical spacing below the button */
 }
 
-/* Clear the float so the image below doesn't get messed up */
-.project-block img.img-fluid {
-    clear: both;
-}
-
-/* This is a simple fix to ensure the dropdown content has a nice shadow */
-.project-documentation-box {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Media query for mobile to stack elements and prevent strange overflow */
+/* On smaller screens, allow the dropdown to flow naturally */
 @media (max-width: 767.98px) {
-    .project-block p.description-text {
-        float: none; /* Disable float on mobile */
+    .dropdown-wrapper {
+        position: static;
         width: 100%;
-        margin-right: 0;
-        margin-bottom: 1rem; /* Restore bottom margin for spacing */
+        max-width: none;
+        margin-top: 1rem;
+        text-align: center;
     }
-    
-    .dropdown-container {
-        position: static; /* Let the dropdown flow normally on mobile */
+    .dropdown-wrapper .dropdown-content {
+        position: static;
         width: 100%;
         max-width: none;
     }
