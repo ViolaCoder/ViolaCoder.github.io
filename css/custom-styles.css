@@ -102,3 +102,75 @@
         margin-top: 1rem;
     }
 }
+
+/* Styles for Project Evolution Steps in Documentation */
+.model-evolution-step img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.model-evolution-step .text-center {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Styles for current projects in About section */
+.project-summary-item {
+    padding: 15px;
+    background-color: #ffffff; /* White background for visibility */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+    border-left: 4px solid #f26522; /* Primary color border on left */
+}
+
+.project-summary-item .project-summary-title {
+    font-size: 1.25rem; /* Smaller heading for summary */
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.project-summary-item .project-status-text {
+    font-size: 0.85rem; /* Smaller text for status */
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Smaller Progress Bar specific to the About section */
+.progress-container-small {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 15px; /* Smaller height */
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-small {
+    height: 100%;
+    background-color: #f26522; /* Primary color */
+    width: 0%; /* Initial width */
+    border-radius: 5px;
+    position: relative;
+    transition: width 0.8s ease-in-out;
+}
+
+.progress-fill-small {
+    display: block;
+    height: 100%;
+    background-color: #f26522; /* Primary color */
+    border-radius: 5px;
+}
+
+.progress-percent-small {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 0.75rem; /* Smaller percentage text */
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
