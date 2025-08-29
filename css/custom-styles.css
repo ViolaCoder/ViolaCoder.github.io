@@ -111,41 +111,20 @@
 
 /* ... (Your existing custom styles) ... */
 
-/* Ensures the image respects its container and is responsive */
-.image-container img {
-    width: 100%; /* Make image fill its container width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow */
+/* CSS Grid for the new Experience Section Layout */
+.experience-entry {
+    /* For screens wider than 768px, use a grid layout */
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* This creates a two-column grid: left column is twice as wide as the right */
+        gap: 20px; /* Space between the columns */
+    }
 }
 
-/* Style for the dropdown content box */
-.project-documentation-box {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Specific styling for the dropdown button in the whitespace */
-.dropdown-in-whitespace {
-    /* Adjust width if you want the button to take less than full available horizontal space */
-    /* max-width: 250px; /* Example: limit the width of the button if it gets too wide */
-    white-space: nowrap; /* Prevent button text from wrapping if you have long text */
-    flex-shrink: 0; /* Prevent the button from shrinking on smaller screens */
-    margin-left: 20px; /* Add some space between the image and the dropdown */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 767.98px) {
-    .d-flex.justify-content-between.align-items-start {
-        flex-direction: column; /* Stack image and dropdown vertically */
-        align-items: flex-start; /* Align items to the start when stacked */
-    }
-
-    .dropdown-in-whitespace {
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-top: 15px; /* Add some space between image and button */
-        width: 100%; /* Make button full width on small screens */
-    }
-
-    .dropdown-in-whitespace button {
-        width: 100%; /* Ensure the button itself also fills the width */
-    }
+/* On smaller screens, the grid will automatically stack, but we can explicitly disable it */
+.experience-grid-col-1,
+.experience-grid-col-2 {
+    /* Ensure no special positioning is applied on smaller screens */
+    display: block;
+    width: 100%;
 }
