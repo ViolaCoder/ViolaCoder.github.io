@@ -86,14 +86,15 @@
 }
 
 /* CSS Grid for the new Experience Section Layout */
-/* We will apply the grid layout only on medium and larger screens */
 @media (min-width: 768px) {
     .experience-grid {
         display: grid;
-        grid-template-columns: 2fr 1fr; /* This creates a two-column grid: left column is twice as wide as the right */
+        grid-template-columns: 2fr 1fr; /* Left column is twice as wide as the right */
         gap: 20px; /* Space between the columns */
     }
-}
 
-/* On smaller screens, the elements will automatically stack as normal. */
-/* No need for explicit mobile rules in this case. */
+    /* Adjust the alignment of the date in the second column */
+    .experience-grid-col-2 .experience-date {
+        text-align: right; /* Aligns the date to the right within its column */
+    }
+}
