@@ -73,3 +73,8 @@
     margin-top: 5px;
     margin-bottom: 0;
 }
+
+/* Custom Progress Bar Colors */
+.progress-green {
+    background-color: #28a745 !important;
+}
