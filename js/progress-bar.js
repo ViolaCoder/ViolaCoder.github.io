@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate bar fill
         fill.style.width = `${percentage}%`;
 
-        // Update text content + smart positioning
+        // Update percent text
         if (percentText) {
             percentText.textContent = `${percentage}%`;
-
             if (percentage < 20) {
                 percentText.classList.add('outside');
             } else {
