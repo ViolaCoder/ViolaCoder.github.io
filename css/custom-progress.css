@@ -31,11 +31,12 @@
 .progress-fill-small {
     display: block;
     height: 100%;
-    background-color: transparent; /* No color here, JS sets it */
+    width: 0; /* ✅ start empty, JS fills it */
+    background-color: #28a745; /* ✅ default green, JS can override */
     border-radius: 5px;
     transition: width 1s ease-in-out;
-    width: 100%; /* Fill the parent container */
 }
+
 
 /* The element inside the progress bar to show the percentage text */
 .progress-percent-small {
