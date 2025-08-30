@@ -1,72 +1,64 @@
-/* --- Custom Progress Bars --- */
+/* custom-progress.css */
 
-/* Container for the small progress bar */
-/* --- Custom Progress Bars --- */
-.progress-container-small {
+.progress-container {
     width: 100%;
-    height: 15px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative; /* anchor for fill */
+    margin-top: 10px; /* Space between project name and bar */
+    margin-bottom: 10px; /* Space between bar and status text */
+    position: relative;
+    height: 25px; /* Height of the progress bar */
 }
 
-.progress-bar-small {
+.progress-bar {
     width: 100%;
+    background-color: #e0e0e0; /* Background color of the empty bar */
+    border-radius: 5px; /* Rounded corners for the bar */
+    overflow: hidden; /* Ensures the fill stays within rounded corners */
     height: 100%;
-    background-color: transparent; /* wrapper remains transparent */
-    border-radius: 5px;
-    position: relative; /* needed for fill inside */
+    display: flex; /* Use flexbox for alignment of percent text */
+    align-items: center; /* Vertically center the percent text */
+    position: relative; /* For absolute positioning of fill */
 }
 
-/* Fill is no longer absolute; use inline-block for flow */
-.progress-fill-small {
-    display: inline-block;
+.progress-fill {
     height: 100%;
-    width: 0; /* JS sets width */
-    background-color: #28a745; /* green */
-    border-radius: 5px 0 0 5px; /* left corners rounded */
-    transition: width 0.8s ease-in-out;
+    /* Keep !important for background-color to ensure green, remove for width */
+    background-color: #28a745 !important; /* Green color */
+    width: 0; /* Removed !important here - JS will set this */
+    position: absolute; /* Position filling from the left */
+    top: 0;
+    left: 0;
+    border-radius: 5px; /* Match parent border-radius */
+    transition: width 1s ease-in-out; /* Smooth animation for fill */
+    z-index: 1; /* Ensure fill is below text */
 }
 
-.progress-percent-small {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.75rem;
+.progress-percent {
+    position: absolute; /* Position percent text over the bar */
+    right: 10px; /* Distance from the right edge of the bar */
+    font-size: 0.9em;
     font-weight: bold;
-    color: #ffffff;
-    z-index: 2;
-    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    color: #495057; /* Darker color for readability */
+    z-index: 2; /* Ensure text is above fill */
 }
 
-/* Optional: Percentage outside the bar */
-.progress-percent-small.outside {
-    color: #000;
-    right: -35px;
-    text-shadow: none;
+.project-status-text {
+    font-size: 0.95em;
+    color: #6c757d; /* Muted color for descriptive text */
+    margin-top: 5px; /* Space below the progress bar */
 }
 
-/* General styles for project summary items */
-.project-summary-item {
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    margin-bottom: 15px;
-    border-left: 4px solid #f26522; /* Orange accent */
+/* Optional: Adjust spacing if needed for projects */
+.resume-section-content h3.mb-0 {
+    margin-bottom: 0.5rem !important; /* Reduce space below project title */
 }
 
-.project-summary-item .project-summary-title {
-    font-size: 1rem;
-    color: #343a40;
-    margin-bottom: 0.5rem;
+.d-flex.flex-column.flex-md-row.justify-content-between.mb-5 {
+    padding-bottom: 1rem; /* Add some padding between project entries */
+    border-bottom: 1px solid #dee2e6; /* Optional: A subtle separator line */
+    margin-bottom: 1.5rem !important; /* Ensure enough space after separator */
 }
 
-.project-summary-item .project-status-text {
-    font-size: 0.85rem;
-    color: #6c757d;
-    margin-top: 5px;
-    margin-bottom: 0;
+.d-flex.flex-column.flex-md-row.justify-content-between.mb-5:last-child {
+    border-bottom: none; /* No border for the last project */
+    margin-bottom: 0 !important;
 }
