@@ -7,14 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const percentage = bar.getAttribute('data-progress');
         const fill = bar.querySelector('.progress-fill-small');
         const percentText = bar.querySelector('.progress-percent-small');
-
+        
         if (fill && percentText) {
             fill.style.width = `${percentage}%`;
+            fill.style.backgroundColor = '#28a745'; // Set the green color here
             percentText.textContent = `${percentage}%`;
         }
     });
-
-    // We'll leave the old IntersectionObserver commented out
-    // because the bars are now on the "About" page and not on a scroll-triggered section.
-    // If you want to add animation on scroll later, we'll need to adapt this for the "About" section.
 });
