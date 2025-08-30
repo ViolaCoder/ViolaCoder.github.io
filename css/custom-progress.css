@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 200px;
     height: 20px;
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* gray background */
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -26,10 +26,14 @@
 .progress-fill-small {
     display: block;
     height: 100%;
-    width: 0; /* start empty */
+    width: 0;
     background-color: #28a745; /* GREEN fill */
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px; /* round only left side */
     transition: width 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* ensure it's on top of container */
 }
 
 .progress-percent-small {
@@ -42,8 +46,9 @@
     color: #fff;
     text-shadow: 0 0 2px rgba(0,0,0,0.5);
     white-space: nowrap;
-    transition: all 0.3s ease;
+    z-index: 2; /* stays above the green bar */
 }
+
 
 .progress-percent-small.outside {
     color: #000;
@@ -72,7 +77,4 @@
     color: #6c757d;
     margin-top: 5px;
     margin-bottom: 0;
-}
-.progress-fill-small {
-    background-color: limegreen !important; /* loud green test */
 }
