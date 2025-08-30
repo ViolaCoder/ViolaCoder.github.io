@@ -44,11 +44,17 @@
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 0.75rem; /* Smaller font size for the percentage */
+    font-size: 0.75rem;
     font-weight: bold;
-    color: #ffffff; /* White text for contrast */
-    z-index: 2; /* Ensures text is on top of the green fill */
-    text-shadow: 0 0 2px rgba(0,0,0,0.5); /* Adds a small shadow for readability */
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+.progress-percent-small.outside {
+    color: #000; /* readable outside */
+    right: -35px; /* shift outside the container */
+    text-shadow: none;
 }
 
 /* General styles for the project summary items */
