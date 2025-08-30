@@ -1,37 +1,31 @@
-/* custom-progress.css */
+/* --- Custom Progress Bars --- */
 
-/*
-   This CSS file contains styles for the progress bars on the website.
-   It has been updated to correctly style the smaller progress bars
-   used in the 'Current Projects' section.
-*/
-
-/* Styles for the small progress bar container */
+/* Container for the small progress bar */
+/* --- Custom Progress Bars --- */
 .progress-container-small {
     width: 100%;
-    height: 15px; /* keep your original height */
+    height: 15px;
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    position: relative; /* anchor for the fill */
+    position: relative; /* anchor for fill */
 }
 
 .progress-bar-small {
     width: 100%;
     height: 100%;
-    position: relative; /* important */
+    background-color: transparent; /* wrapper remains transparent */
+    border-radius: 5px;
+    position: relative; /* needed for fill inside */
 }
 
+/* Fill is no longer absolute; use inline-block for flow */
 .progress-fill-small {
-    display: block;
+    display: inline-block;
     height: 100%;
-    width: 0; /* JS will update this */
-    background-color: #28a745; /* GREEN */
-    border-radius: 5px 0 0 5px; /* round left corners */
-    position: absolute; /* ensures it stays inside parent */
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: 0; /* JS sets width */
+    background-color: #28a745; /* green */
+    border-radius: 5px 0 0 5px; /* left corners rounded */
     transition: width 0.8s ease-in-out;
 }
 
@@ -42,27 +36,26 @@
     transform: translateY(-50%);
     font-size: 0.75rem;
     font-weight: bold;
-    color: #fff;
-    z-index: 2; /* always on top */
+    color: #ffffff;
+    z-index: 2;
     text-shadow: 0 0 2px rgba(0,0,0,0.5);
-    white-space: nowrap;
 }
 
-
+/* Optional: Percentage outside the bar */
 .progress-percent-small.outside {
     color: #000;
     right: -35px;
     text-shadow: none;
 }
 
-/* General styles for the project summary items */
+/* General styles for project summary items */
 .project-summary-item {
     padding: 15px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     margin-bottom: 15px;
-    border-left: 4px solid #f26522; /* Primary color border on left */
+    border-left: 4px solid #f26522; /* Orange accent */
 }
 
 .project-summary-item .project-summary-title {
@@ -77,12 +70,3 @@
     margin-top: 5px;
     margin-bottom: 0;
 }
-
-.progress-fill-small {
-  background: red !important;
-  width: 100% !important;
-  height: 100% !important;
-  position: relative !important;
-  z-index: 9999 !important;
-}
-
