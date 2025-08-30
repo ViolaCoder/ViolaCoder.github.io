@@ -14,27 +14,27 @@
     background-color: #e0e0e0; /* gray background */
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
+    position: relative; /* keep container as reference */
 }
 
 .progress-bar-small {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: relative; /* this is key! anchor child */
 }
 
 .progress-fill-small {
-    display: block;
     height: 100%;
     width: 0;
-    background-color: #28a745; /* GREEN fill */
-    border-radius: 5px 0 0 5px; /* round only left side */
+    background-color: #28a745; /* green */
+    border-radius: 5px 0 0 5px;
     transition: width 1s ease-in-out;
-    position: absolute;
+    position: absolute; /* positions inside parent */
     top: 0;
     left: 0;
-    z-index: 1; /* ensure it's on top of container */
+    z-index: 1;
 }
+
 
 .progress-percent-small {
     position: absolute;
