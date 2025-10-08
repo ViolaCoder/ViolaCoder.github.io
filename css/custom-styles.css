@@ -180,7 +180,7 @@
 /* 1. Centering the content */
 .resume-content-wrapper {
     /* Set a max width so content doesn't stretch across a giant screen */
-    max-width: 500px; 
+    max-width: 300px; 
     margin: 0 auto; /* Center the wrapper itself */
     text-align: center; /* Center the inline button and text inside */
 }
