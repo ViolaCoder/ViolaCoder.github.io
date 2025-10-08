@@ -212,13 +212,6 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 3. Resume Image Preview Styling */
-.resume-preview-container {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow to make it look like a physical document */
-    border: 1px solid #ddd;
-    display: inline-block; /* Helps contain the shadow neatly */
-}
-
 .resume-image {
     /* The image itself should use the Bootstrap fluid class, but we ensure it's contained */
     display: block;
