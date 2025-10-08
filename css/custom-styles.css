@@ -225,3 +225,23 @@
     max-width: 100%;
     height: auto;
 }
+
+/* 3. Resume Image Preview Styling */
+.resume-preview-container {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    border: 1px solid #ddd;
+    display: inline-block; 
+    
+    /* ADD THIS LINE for smooth movement */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+/* 4. Hover Effect for Resume Preview */
+.resume-preview-container:hover {
+    /* Lifts the image slightly */
+    transform: translateY(-5px); 
+    
+    /* Enhances the shadow */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); 
+    /* You can use a single, slightly stronger shadow to replace the original */
+}
