@@ -69,7 +69,7 @@
                 </div>
                 <div class="experience-content-grid">
                     <div>
-                        <p>Responsible for designing systems that optimize driver comfort as well as range of drivers, allowing for infromed chassis design and pedal and steering wheel placement. </p>
+                        <p>Responsible for designing systems that optimize driver comfort as well as range of drivers, allowing for informed chassis design and pedal and steering wheel placement. </p>
                         <img class="img-fluid rounded my-3" src="assets/img/bruin_racing_baja.jpg" alt="Bruin Racing Baja Car" style="max-width: 600px; height: auto;">
                     </div>
                     <div class="experience-details">
@@ -83,25 +83,25 @@
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 1: Lidar Scan</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/a4j74a.gif" alt="Initial Concept Sketch" style="max-width: 500px; height: auto;">
-                                    <p>The scan is taken using a lidar camera, which comes with many of the newer apple products. The scan was taken on the application Polycam, usuing a free trial.</p>
+                                    <p>The scan is taken using a lidar camera, which comes with many of the newer apple products. The scan was taken on the application Polycam, using a free trial. Numerous scans of several drivers were taken.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 2: Scan to SolidWorkds</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_cad_iteration1.png" alt="First CAD Iteration" style="max-width: 500px; height: auto;">
-                                    <p>Scans come in a crude state. Mesh simplification happens in MeshLab to decrease the number of triangles to decrease processing time in SolidWorks. Unfortunately, the scans, when uploaded are not properly scaled. This was an aftersight, as accurate measurements of arms and legs were necessary to scale the models up. In the future, it will be recommened to hold a ruler between the hands to have a simple method of scaling.</p>
+                                    <p>Scans come in a crude state. Mesh simplification is required in MeshLab to decrease the complexity and processing time in SolidWorks. The scans are proportional, but not scaled, meaning accurate measurements of several body parts is necessary to scale the models with minimal error.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 3: Creating Joints (Vid low resolution/8 color)</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_mechanism.gif" alt="Dynamic Mechanism GIF" style="max-width: 500px; height: auto;">
-                                    <p>This process is arduious and tedious, but extrememly necessary to create a versatile model. I spent hours trying to discover a way to create the most efficient method. The first was creating numerous planes to intersect the model and to loft the sketches to create a simple body part. The only issue with this was the time it took, so I tried to get a human model online and scale up the body parts accordingly, but that proved to be inefficient as well. I settled upon using Fusion 360 to split the mesh into the respective body parts and treat it as a solid body in SolidWorks. From there, I created an assembly, and used ball joints in order to mate the parts together.</p>
+                                    <p>To ensure consistency in posture, and clearance, movable models are necessary for an informed chassis design. Fusion 360 was used to separate the limbs of the model. The model was then simplified further in Meshlab before being imported to SolidWorks. Ball joints were used in assembly to allow for joint-like motion.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 4: Clearence (Vid low resolution/8 color)</h5>
                                     <img class="img-fluid rounded mb-3" src="assets/img/model_refined_simulation.gif" alt="Refined Design Simulation" style="max-width: 500px; height: auto;">
-                                    <p>The model itself is great for determining the fit inside the car, but to pass rules, there must be at least a certain amount of distance between each body part and the car. Using the information provided on the rules sheet, created a plane in the middle of each body part, created an intersection sketch, and drew perpendicular lines off of the sketch all of the same distance for clearance. I then spline sketched to create a sort of projection. I then extruded the sketch past the body part by the required clearance. A failed method I tried was to scale up the body part, such that it will be the required clearance, but scaling creates expansion, which alters distance relative to the initial part. I scaled the helmet for head clearance, and that works becasue the only required part is spherical.</p>
+                                    <p>The model itself is great for determining the fit inside the car, but to pass rules, there must be at least a certain amount of distance between each body part and the car. Using the information provided on the rules sheet, the transparent shells were made to have a radius of 3" from each limb. The head needed 6" of clearance, so a scaled up helmet that is already a semisphere was sufficient. Now, when the model is moved, if the transparent shell intersects the car, we know that it is not rules compliant.</p>
                                 </div>
                             </div>
                         </div>
