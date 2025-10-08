@@ -174,3 +174,54 @@
     font-weight: bold;
     text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
+
+/* --- RESUME SECTION STYLES --- */
+
+/* 1. Centering the content */
+.resume-content-wrapper {
+    /* Set a max width so content doesn't stretch across a giant screen */
+    max-width: 500px; 
+    margin: 0 auto; /* Center the wrapper itself */
+    text-align: center; /* Center the inline button and text inside */
+}
+
+/* 2. Professional Download Button Styling */
+.download-button {
+    /* Essential: Makes the link act like a block element, but still respects text-align: center */
+    display: inline-block; 
+    
+    padding: 12px 30px;
+    margin-top: 15px; /* Add some space above the button */
+    
+    /* Remove 'link' styling and apply 'button' styling */
+    color: white !important; /* Force white text */
+    background-color: #007bff; /* Use a strong primary color (Bootstrap blue) */
+    text-decoration: none; /* Crucial: Removes the underline */
+    
+    /* Make it look modern and trustworthy */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700; /* Bold text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Resume Image Preview Styling */
+.resume-preview-container {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow to make it look like a physical document */
+    border: 1px solid #ddd;
+    display: inline-block; /* Helps contain the shadow neatly */
+}
+
+.resume-image {
+    /* The image itself should use the Bootstrap fluid class, but we ensure it's contained */
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
