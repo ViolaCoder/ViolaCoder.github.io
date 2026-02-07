@@ -57,6 +57,7 @@
 <section class="resume-section" id="experience">
     <div class="resume-section-content">
         <h2 class="mb-5">Experience</h2>
+
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5 experience-item">
             <div class="flex-grow-1">
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
@@ -106,6 +107,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <button class="btn btn-outline-secondary btn-sm mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseErgonomicsDetailTwo" aria-expanded="false" aria-controls="collapseErgonomicsDetailTwo">
                             Ergonomic Jig Documentation (In Progress) <i class="fas fa-chevron-down toggle-icon"></i>
                         </button>
@@ -139,10 +141,9 @@
                                 </div>
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 5: Ergo Jig Manufacturing (within next two weeks)</h5>
+                                </div>
                                 <div class="model-evolution-step mb-4">
                                     <h5 class="mb-3">Step 6: Ergo Jig Driver Data Collection (within next month)</h5>
-                                </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +151,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5 experience-item">
             <div class="flex-grow-1">
@@ -165,79 +165,27 @@
                 </div>
                 <div class="experience-content-grid">
                     <div>
-                        <p>Responsible for designing and manufacturing the Thrust and Upper Recovery Bulkheads, optimizing for weight and manufacturability. </p>
-                        <img class="img-fluid rounded my-3" src="assets/img/bracing.png" alt="Bruin Racing Baja Car" style="max-width: 600px; height: auto;">
+                        <p>Designed Thrust and Upper Recovery Bulkhead, optimizing for manufacturability and weight.</p>
+                        <img class="img-fluid rounded my-3" src="assets/img/rocket.png" alt="Rocket Project Main" style="max-width: 600px; height: auto;">
                     </div>
                     <div class="experience-details">
-                        <button class="btn btn-outline-secondary btn-sm mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseErgonomicsDetail" aria-expanded="false" aria-controls="collapseErgonomicsDetail">
-                            Bulkhead Documentation <i class="fas fa-chevron-down toggle-icon"></i>
+                        <button class="btn btn-outline-secondary btn-sm mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRocketDetail" aria-expanded="false" aria-controls="collapseRocketDetail">
+                            Rocket Documentation <i class="fas fa-chevron-down toggle-icon"></i>
                         </button>
-                        <div class="collapse mt-3" id="collapseErgonomicsDetail">
+                        <div class="collapse mt-3" id="collapseRocketDetail">
                             <div class="p-3 bg-light rounded project-documentation-box">
                                 <h4>Purpose/Goal</h4>
-                                <p>The goal of the model is to accurately convert a scan of a real person into a program like SolidWorks to ensure optimal packaging of the interface, while also ensuring compliancy with the clearance rules.</p>
+                                <p>Description of the goal of this component.</p>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 1: Lidar Scan</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/a4j74a.gif" alt="Initial Concept Sketch" style="max-width: 500px; height: auto;">
-                                    <p>The scan is taken using a lidar camera, which comes with many of the newer apple products. The scan was taken on the application Polycam, using a free trial. Numerous scans of several drivers were taken.</p>
+                                    <h5 class="mb-3">Step 1: Design</h5>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/bracing.png" alt="Rocket Step 1" style="max-width: 500px; height: auto;">
+                                    <p>Description of step 1.</p>
                                     <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
                                 </div>
                                 <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 2: Scan to SolidWorkds</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/model_cad_iteration1.png" alt="First CAD Iteration" style="max-width: 500px; height: auto;">
-                                    <p>Scans come in a crude state. Mesh simplification is required in MeshLab to decrease the complexity and processing time in SolidWorks. The scans are proportional, but not scaled, meaning accurate measurements of several body parts is necessary to scale the models with minimal error.</p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 3: Creating Joints (Vid low resolution/8 color)</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/model_mechanism.gif" alt="Dynamic Mechanism GIF" style="max-width: 500px; height: auto;">
-                                    <p>To ensure consistency in posture, and clearance, movable models are necessary for an informed chassis design. Fusion 360 was used to separate the limbs of the model. The model was then simplified further in Meshlab before being imported to SolidWorks. Ball joints were used in assembly to allow for joint-like motion.</p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 4: Clearence (Vid low resolution/8 color)</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/model_refined_simulation.gif" alt="Refined Design Simulation" style="max-width: 500px; height: auto;">
-                                    <p>The model itself is great for determining the fit inside the car, but to pass rules, there must be at least a certain amount of distance between each body part and the car. Using the information provided on the rules sheet, the transparent shells were made to have a radius of 3" from each limb. The head needed 6" of clearance, so a scaled up helmet that is already a semisphere was sufficient. Now, when the model is moved, if the transparent shell intersects the car, we know that it is not rules compliant.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-secondary btn-sm mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseErgonomicsDetailTwo" aria-expanded="false" aria-controls="collapseErgonomicsDetailTwo">
-                            Ergonomic Jig Documentation (In Progress) <i class="fas fa-chevron-down toggle-icon"></i>
-                        </button>
-                        <div class="collapse mt-3" id="collapseErgonomicsDetailTwo">
-                            <div class="p-3 bg-light rounded project-documentation-box">
-                                <h4>Purpose/Goal</h4>
-                                <p>The car we want to build needs to serve the driver as best as it can with provided rules constraints. It is my and my Co-PE's job to optimize the position and placement of the steering wheel, pedals, and seat in order for the driver to have the best comfort and agility, while maintaining proper clearances. The ergonomic jig allows for multiple drivers to enter and determine what their optimal angles are. Using that information, we will be able to create a general jig setup for all drivers to use and determine clearances and comfort. The data will then be applied to the manufacturing of the car, allowing us to pass technical inspection, while also allowing for maximal average comfort/agility between drivers.</p>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 1: General Design</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/Ergo_Jig_Andrew.jpg" alt="Placeholder Image 1" style="max-width: 500px; height: auto;">
-                                    <p>My Co-PE created the following drawing for guidance. We decided to use 80/20 aluminum extrusions due to their relatively inexpensive nature and T-nut adjustability, meaning the holes and brackets in the drawing are inaccurate. Knowing the general outline of the jig, we split up where he designed the structure of the jig, while I designed the concepts for the steering and pedals.</p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 2: Creating an Adjustable Steering Wheel</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/Steering.gif" alt="Placeholder Image 2" style="max-width: 500px; height: auto;">
-                                    <p>The placement of the steering wheel is extremely important, as it determines both the arm height/angle and the range of rotation, as well as the degree of leg separation, which could impact driver clearances. My design incorporates lateral adjustability (this is not too important, as we know the steering wheel will rougly be centered), and angular adjustability. When put into my Co-PE's jig body, the wheel will also be able to move vertically and back and forth, meaning the design allows for all relevant positions. To lock an angle, the design is such that when the bolt is screwed, the blocks of wood will move closer, thus compressing the middle block, stopping the motion through friction. </p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 3: Creating Adjustable Pedal Placememts</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/Pedal.gif" alt="Placeholder Image 3" style="max-width: 500px; height: auto;">
-                                    <p>The placement of the pedals is also important. As our range of drivers is larger than last year, finding optimal placements that allow for maximum comfort and range is necessary. The design allows for front and back adjustability, as well as pedal angle adjustability.</p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 4: Ergo Jig Assembly</h5>
-                                    <img class="img-fluid rounded mb-3" src="assets/img/Demonstrationfr-ezgif.com-video-to-gif-converter.gif" alt="Placeholder Image 3" style="max-width: 500px; height: auto;">
-                                    <p>The assebly demonstrates the versatility of the jig. Notice the pedal assembly is different, as we put in a simpler model in the assembly because we only needed to determine the size of the plank of wood.</p>
-                                    <div class="text-center mt-3"><i class="fas fa-arrow-down fa-2x text-primary"></i></div>
-                                </div>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 5: Ergo Jig Manufacturing (within next two weeks)</h5>
-                                <div class="model-evolution-step mb-4">
-                                    <h5 class="mb-3">Step 6: Ergo Jig Driver Data Collection (within next month)</h5>
-                                </div>
-                                </div>
+                                    <h5 class="mb-3">Step 2: Analysis</h5>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/bracing.png" alt="Rocket Step 2" style="max-width: 500px; height: auto;">
+                                    <p>Description of step 2.</p>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +193,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </section>
             <hr class="m-0" />
