@@ -45,109 +45,113 @@
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Featured Projects</h2>
-      </div>
+   <section class="section" id="projects">
+  <div class="section-heading">
+    <p class="eyebrow">Selected Work</p>
+    <h2>Projects</h2>
+    <p class="section-subtitle">
+      Click any project to view documentation, design decisions, images, and build notes.
+    </p>
+  </div>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="assets/img/bracing.png" alt="Baja SAE vehicle" />
-          <div class="card-body">
-            <p class="tag">Baja SAE</p>
-            <h3>Ergonomic Driver Model</h3>
-            <p>
-              Built a LiDAR-to-CAD workflow to evaluate driver fit, posture, and SAE clearance constraints
-              across multiple body types.
-            </p>
-            <ul>
-              <li>Tools: Polycam, MeshLab, Fusion 360, SolidWorks</li>
-              <li>Result: Improved viable driver range by approximately 15%</li>
-            </ul>
-          </div>
-        </article>
+  <div class="project-category">
+    <h3>Baja SAE</h3>
+    <div class="project-grid">
 
-        <article class="project-card">
-          <img src="assets/img/Ergo_Jig_Andrew.jpg" alt="Ergonomic jig" />
-          <div class="card-body">
-            <p class="tag">Design + Testing</p>
-            <h3>Adjustable Ergonomic Jig</h3>
-            <p>
-              Designed adjustable steering and pedal placement concepts to collect driver comfort data
-              before final chassis design.
-            </p>
-            <ul>
-              <li>Tools: SolidWorks, 80/20 extrusion, manufacturing planning</li>
-              <li>Focus: repeatable driver positioning and packaging validation</li>
-            </ul>
-          </div>
-        </article>
+      <button class="project-card project-open" data-project="baja-driver-model">
+        <img src="assets/img/model_cad_iteration1.png" alt="Baja driver CAD model">
+        <div class="card-body">
+          <p class="tag">Baja SAE</p>
+          <h4>Ergonomic Driver Model</h4>
+          <p>LiDAR-to-CAD workflow for validating driver fit and clearance.</p>
+        </div>
+      </button>
 
-        <article class="project-card">
-          <img src="assets/img/CFcar.jpg" alt="Carbon fiber seat and steering wheel in Baja car" />
-          <div class="card-body">
-            <p class="tag">Composites</p>
-            <h3>Carbon Fiber Seat + Steering Wheel</h3>
-            <p>
-              Helped manufacture lightweight composite components using wet layup, vacuum bagging,
-              trimming, finishing, and fitment.
-            </p>
-            <ul>
-              <li>Tools: carbon fiber, resin, vacuum bagging, Dremel, PPE</li>
-              <li>Focus: weight reduction and driver packaging</li>
-            </ul>
-          </div>
-        </article>
+      <button class="project-card project-open" data-project="baja-jig">
+        <img src="assets/img/Ergo_Jig_Andrew.jpg" alt="Adjustable ergonomic jig">
+        <div class="card-body">
+          <p class="tag">Baja SAE</p>
+          <h4>Adjustable Ergonomic Jig</h4>
+          <p>Physical jig for testing steering and pedal placement.</p>
+        </div>
+      </button>
 
-        <article class="project-card">
-          <img src="assets/img/bulk.png" alt="Rocket bulkhead CAD" />
-          <div class="card-body">
-            <p class="tag">Rocket Project UCLA</p>
-            <h3>Thrust Bulkhead</h3>
-            <p>
-              Designed internal rocket structures while balancing load requirements, weight, and
-              manufacturability.
-            </p>
-            <ul>
-              <li>Tools: SolidWorks, mechanical design, hand calculations</li>
-              <li>Focus: fastener layout, bearing stress, manufacturability</li>
-            </ul>
-          </div>
-        </article>
+      <button class="project-card project-open" data-project="carbon-fiber">
+        <img src="assets/img/CFcar.jpg" alt="Carbon fiber components">
+        <div class="card-body">
+          <p class="tag">Composites</p>
+          <h4>Carbon Fiber Seat + Steering Wheel</h4>
+          <p>Composite manufacturing using wet layup and vacuum bagging.</p>
+        </div>
+      </button>
 
-        <article class="project-card">
-          <img src="assets/img/faraday.jpg" alt="Faraday cage bed prototype" />
-          <div class="card-body">
-            <p class="tag">Personal Prototype</p>
-            <h3>Faraday Cage Bed</h3>
-            <p>
-              Designed and built a non-permanent dorm bed enclosure to test RF shielding, sleep discipline,
-              ventilation, and blackout performance.
-            </p>
-            <ul>
-              <li>Tools: SolidWorks, Arduino, woodworking, aluminum shielding</li>
-              <li>Focus: rapid prototyping under dorm constraints</li>
-            </ul>
-          </div>
-        </article>
+    </div>
+  </div>
 
-        <article class="project-card">
-          <img src="assets/img/matarm.jpg" alt="Robotic arm simulation" />
-          <div class="card-body">
-            <p class="tag">Robotics</p>
-            <h3>3-DOF Robotic Arm Simulation</h3>
-            <p>
-              Developed a MATLAB/Simscape robotic arm model with inverse kinematics and coordinate-based
-              motion input.
-            </p>
-            <ul>
-              <li>Tools: MATLAB, Simscape Multibody, SolidWorks</li>
-              <li>Focus: kinematics, simulation, mechatronics foundation</li>
-            </ul>
-          </div>
-        </article>
-      </div>
+  <div class="project-category">
+    <h3>Rocket Project UCLA</h3>
+    <div class="project-grid">
+
+      <button class="project-card project-open" data-project="rocket-bulkhead">
+        <img src="assets/img/bulk.png" alt="Rocket bulkhead CAD">
+        <div class="card-body">
+          <p class="tag">Structures</p>
+          <h4>Thrust Bulkhead</h4>
+          <p>Rocket internal structure designed around load path and manufacturability.</p>
+        </div>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="project-category">
+    <h3>Class / Technical Projects</h3>
+    <div class="project-grid">
+
+      <button class="project-card project-open" data-project="robot-arm">
+        <img src="assets/img/matarm.jpg" alt="Robotic arm simulation">
+        <div class="card-body">
+          <p class="tag">Robotics</p>
+          <h4>3-DOF Robotic Arm Simulation</h4>
+          <p>MATLAB and Simscape arm simulation with inverse kinematics.</p>
+        </div>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="project-category">
+    <h3>Personal Projects</h3>
+    <div class="project-grid">
+
+      <button class="project-card project-open" data-project="faraday-bed">
+        <img src="assets/img/faraday.jpg" alt="Faraday cage bed">
+        <div class="card-body">
+          <p class="tag">Prototype</p>
+          <h4>Faraday Cage Bed</h4>
+          <p>Dorm-compatible RF shielding and sleep environment prototype.</p>
+        </div>
+      </button>
+
+      <button class="project-card project-open" data-project="website">
+        <img src="assets/img/website.jpg" alt="Portfolio website">
+        <div class="card-body">
+          <p class="tag">Web</p>
+          <h4>Portfolio Website</h4>
+          <p>Personal engineering portfolio built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<div class="project-modal" id="project-modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close project">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
     </section>
 
     <section class="section split" id="experience">
