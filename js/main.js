@@ -343,9 +343,19 @@ const personalSections = {
       "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
     sections: [
       {
-        heading: "Current Notes",
+        heading: "Philosophies",
         body:
-          "Add ideas here later. This can include invention concepts, video ideas, writing fragments, strange builds, or anything that feels worth preserving."
+          "Notes about principles, beliefs, strange observations, and how I think life should be lived."
+      },
+      {
+        heading: "Engineering Goals",
+        body:
+          "Long-term technical ambitions, project ideas, inventions, mechanisms, robots, and systems I want to build."
+      },
+      {
+        heading: "School Plans",
+        body:
+          "Academic plans, classes to take seriously, research goals, internships, and things I want to improve before graduating."
       }
     ]
   },
@@ -357,9 +367,29 @@ const personalSections = {
       "A place to write about the kind of life, work, family, environment, and character I want to build toward.",
     sections: [
       {
-        heading: "Direction",
+        heading: "End",
         body:
-          "Add aspirations here later. This could include career direction, personal principles, places I want to live, people I want to become closer to, and the kind of future I want."
+          "Thoughts about the ultimate direction of life: what I want everything to point toward."
+      },
+      {
+        heading: "Family",
+        body:
+          "Ideas about marriage, children, home life, traditions, and the kind of family culture I want to build."
+      },
+      {
+        heading: "Location",
+        body:
+          "Places I might want to live, land, houses, towns, climates, and the kind of environment I want around me."
+      },
+      {
+        heading: "Career",
+        body:
+          "The kind of work I want to do, companies or industries to pursue, and what I want my professional life to become."
+      },
+      {
+        heading: "Health",
+        body:
+          "Fitness, sleep, food, discipline, long-term strength, and the body I want to maintain."
       }
     ]
   },
@@ -371,9 +401,29 @@ const personalSections = {
       "A place for music, books, films, habits, aesthetics, travel, and other non-engineering interests.",
     sections: [
       {
-        heading: "Non-Engineering",
+        heading: "Things to Do",
         body:
-          "Add hobbies here later. This can include viola, music, books, walking, film, YouTube ideas, or anything else that matters outside engineering."
+          "Activities, places to visit, people to see, skills to try, and experiences I do not want to forget."
+      },
+      {
+        heading: "Books to Write",
+        body:
+          "Story concepts, essays, personal reflections, fiction ideas, and writing projects I may want to develop."
+      },
+      {
+        heading: "Books to Read",
+        body:
+          "Books I want to read, reread, study, or understand more deeply."
+      },
+      {
+        heading: "Movies to Watch",
+        body:
+          "Films, directors, genres, and visual styles I want to explore."
+      },
+      {
+        heading: "Music to Play",
+        body:
+          "Viola pieces, songs, repertoire, chamber music, and musical ideas I want to return to."
       }
     ]
   }
