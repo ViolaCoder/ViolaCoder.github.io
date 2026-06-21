@@ -336,29 +336,63 @@ const currentProjects = {
 };
 
 const personalSections = {
-  ideas: {
-    title: "Ideas",
-    category: "Personal",
-    overview:
-      "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
-    sections: [
-      {
-        heading: "Philosophies",
-        body:
-          "Notes about principles, beliefs, strange observations, and how I think life should be lived."
-      },
-      {
-        heading: "Engineering Goals",
-        body:
-          "Long-term technical ambitions, project ideas, inventions, mechanisms, robots, and systems I want to build."
-      },
-      {
-        heading: "School Plans",
-        body:
-          "Academic plans, classes to take seriously, research goals, internships, and things I want to improve before graduating."
-      }
-    ]
-  },
+ideas: {
+  title: "Ideas",
+  category: "Personal",
+  overview:
+    "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
+  sections: [
+    {
+      heading: "Philosophies",
+      html: `
+        <div class="essay-block">
+          <h4>High School</h4>
+          <p>My philosophy is ever changing, likely because I am still young. In high school, I was more hot-headed and ambitious. I still have that ambition, but it was better manifested then.</p>
+          <p>I became interested in astronomy freshman year, and when COVID hit, that interest intensified. Thinking about the scale and futility of life radically shifted my perception and identity. I became bitter toward the external world because I noticed how much attention is wasted on stupid things when we only have one life.</p>
+          <p>I hated school assemblies. I hated class. I thought I could learn faster on my own and spend more time doing meaningful things. I did not fully know what meaningful things were, but I knew they were not in the classroom or assembly.</p>
+          <p>I began practicing violin seriously. That became meaning for me. I also got into politics. I do not think politics were especially meaningful, but developing opinions helped me develop, even if I still believe my optimal involvement in politics would be zero.</p>
+
+          <h4>The Ideal</h4>
+          <p>I dedicated myself to looking as good as possible for college. I did clubs, AP classes, instrumental conservatory, morning workouts, and long school days. I thought all that effort was effort I was putting into myself.</p>
+          <p>I wanted to get as close to my potential as possible. To me, potential was The Ideal: the version of yourself that the ideal version of yourself would recognize as ideal.</p>
+          <p>That sounds circular, but I think it is true that what we think we want is often not what we actually want, and what we actually want is not always what is best. Even if my idea of The Ideal was imperfect, I believed moving toward it would still bring me closer than staying where I was.</p>
+          <p>I liked encouraging others to do the same. I felt like a catalyst. I brought friends to the gym. I wanted people to do meaningful things instead of wasting time on trivialities.</p>
+
+          <h4>College</h4>
+          <p>In college, my perspective changed again. Previous Nathan was hot-headed and ambitious. I still respect that version of myself and often want to reclaim him, but I am more mature now.</p>
+          <p>Engineering helped me see the flaws in everything. Even designing simple components requires tolerances, clearance, manufacturing limits, and tradeoffs. Perfection is impossible, or at least infeasible.</p>
+          <p>I still believe we should limit the time we waste for other people. I still get angry at useless institutional requirements because they consume thousands of hours across thousands of students for almost no meaningful result.</p>
+          <p>But this philosophy also prevented me from growing. Everyone praises taking the road less traveled, but some roads are less traveled because they go nowhere. The chalice may be in the darkest forest, but walking in without a plan can leave you lost.</p>
+          <p>For my first two years of college, I only went to classes when I thought I needed to. I believed I could learn better on my own. I was half-right. I had the endurance to learn from a textbook and pencil, but not always the discipline to do it at the correct time. School was structure.</p>
+          <p>Music reinforced this because the classes were easy but attendance was mandatory. I felt trapped when I could have been practicing or studying difficult engineering classes.</p>
+
+          <h4>Recognition and Self-Worth</h4>
+          <p>I quit music at the end of Winter sophomore year. I was good, and I do not think people give me enough credit. I do not show myself or brag much, so I often see people I think are less accomplished receive praise I wish I had received.</p>
+          <p>The lack of external recognition burdened me. I wondered why, if I was a Baja Project Engineer, had double-majored in music, and had survived hard mechanical engineering classes, I still was not near where I wanted to be.</p>
+          <p>I encourage criticism because I want to see the entirety of myself: where I shine and where I need polish. But because of this, I am extremely self-critical. I often confuse lack of external validation with lack of progress.</p>
+          <p>High school was the hero’s journey. College has felt like the degradation after accomplishing the destruction of the ring.</p>
+
+          <h4>The Future / Current Snapshot</h4>
+          <p>Noise is noise. Data is data. When they mix, the signal becomes harder to decipher. I think I have put too much emphasis on feedback, because not all feedback is useful.</p>
+          <p>If I were a drone operating with limited noise reduction, high-frequency feedback could make me veer off and destroy myself. But that does not mean feedback should be ignored. It means it should be filtered.</p>
+          <p>Comparing myself to myself, to other people, and back to myself may give me a better map than only listening to the external world.</p>
+          <p>I have many goals. I know I can do them, but I need proof from myself. I need to know I am not just talk. I know I have accomplished things before, but I want documented evidence that, at least at one time, I was competent at the things I enjoy.</p>
+          <p>I am a jack of all trades. I want to master at least one.</p>
+        </div>
+      `
+    },
+    {
+      heading: "Engineering Goals",
+      body:
+        "Long-term technical ambitions, project ideas, inventions, mechanisms, robots, and systems I want to build."
+    },
+    {
+      heading: "School Plans",
+      body:
+        "Academic plans, classes to take seriously, research goals, internships, and things I want to improve before graduating."
+    }
+  ]
+}
 
   aspirations: {
     title: "Aspirations",
@@ -450,10 +484,10 @@ function renderModal(project) {
       ${(project.sections || [])
         .map(
           (section) => `
-            <section class="modal-section">
-              <h3>${section.heading}</h3>
-              <p>${section.body}</p>
-            </section>
+           <section class="modal-section">
+  <h3>${section.heading}</h3>
+  ${section.html ? section.html : `<p>${section.body}</p>`}
+</section>
           `
         )
         .join("")}
