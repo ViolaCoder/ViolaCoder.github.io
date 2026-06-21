@@ -699,7 +699,7 @@ body.modal-locked {
   border-top: 1px solid var(--border);
 }
 
-.secret-section:target {
+.secret-section.open {
   display: block;
 }
 
