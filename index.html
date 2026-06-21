@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nathan Robinson | Mechanical Engineering Portfolio</title>
   <link rel="stylesheet" href="css/portfolio.css" />
-  <script src="https://kit.fontawesome.com/8f4f4f4f4f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,16 +53,16 @@
           <h2>Let’s connect.</h2>
 
           <div class="contact-icon-row">
-            <a class="contact-icon" href="mailto:nkymenrobinson@gmail.com" aria-label="Email">
-              ✉
+            <a class="contact-icon email-icon" href="mailto:nkymenrobinson@gmail.com" aria-label="Email" title="Email">
+              <span>✉</span>
             </a>
 
-            <a class="contact-icon" href="https://www.linkedin.com/in/nathan-robinson-876194212/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              in
+            <a class="contact-icon linkedin-icon" href="https://www.linkedin.com/in/nathan-robinson-876194212/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <span>in</span>
             </a>
 
-            <a class="contact-icon" href="https://github.com/ViolaCoder" target="_blank" rel="noopener" aria-label="GitHub">
-              GH
+            <a class="contact-icon github-icon" href="https://github.com/ViolaCoder" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <span>GH</span>
             </a>
           </div>
         </div>
@@ -72,22 +71,22 @@
           <h3>Current Projects</h3>
 
           <div class="progress-circle-grid">
-            <button class="progress-circle-card current-open" data-current="water-bottle">
+            <button class="progress-circle-card current-open" data-current="water-bottle" type="button">
               <div class="circle-progress" style="--progress: 20"><span>20%</span></div>
               <p>Water Bottle Auto-Fill</p>
             </button>
 
-            <button class="progress-circle-card current-open" data-current="busy-indicator">
+            <button class="progress-circle-card current-open" data-current="busy-indicator" type="button">
               <div class="circle-progress" style="--progress: 10"><span>10%</span></div>
               <p>Busy Indicator</p>
             </button>
 
-            <button class="progress-circle-card current-open" data-current="blinds">
+            <button class="progress-circle-card current-open" data-current="blinds" type="button">
               <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
               <p>Automated Blinds</p>
             </button>
 
-            <button class="progress-circle-card current-open" data-current="umbrella-robot">
+            <button class="progress-circle-card current-open" data-current="umbrella-robot" type="button">
               <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
               <p>Umbrella Robot</p>
             </button>
@@ -109,7 +108,7 @@
         <h3>Baja SAE</h3>
 
         <div class="project-grid">
-          <button class="project-card project-open" data-project="baja-driver-model">
+          <button class="project-card project-open" data-project="baja-driver-model" type="button">
             <img src="assets/img/model_cad_iteration1.png" alt="Baja driver CAD model" />
             <div class="card-body">
               <p class="tag">Baja SAE</p>
@@ -118,7 +117,7 @@
             </div>
           </button>
 
-          <button class="project-card project-open" data-project="baja-jig">
+          <button class="project-card project-open" data-project="baja-jig" type="button">
             <img src="assets/img/Ergo_Jig_Andrew.jpg" alt="Adjustable ergonomic jig" />
             <div class="card-body">
               <p class="tag">Baja SAE</p>
@@ -127,7 +126,7 @@
             </div>
           </button>
 
-          <button class="project-card project-open" data-project="carbon-fiber">
+          <button class="project-card project-open" data-project="carbon-fiber" type="button">
             <img src="assets/img/CFcar.jpg" alt="Carbon fiber components in Baja car" />
             <div class="card-body">
               <p class="tag">Composites</p>
@@ -142,7 +141,7 @@
         <h3>Rocket Project UCLA</h3>
 
         <div class="project-grid">
-          <button class="project-card project-open" data-project="rocket-bulkhead">
+          <button class="project-card project-open" data-project="rocket-bulkhead" type="button">
             <img src="assets/img/bulk.png" alt="Rocket bulkhead CAD" />
             <div class="card-body">
               <p class="tag">Structures</p>
@@ -157,7 +156,7 @@
         <h3>Class / Technical Projects</h3>
 
         <div class="project-grid">
-          <button class="project-card project-open" data-project="robot-arm">
+          <button class="project-card project-open" data-project="robot-arm" type="button">
             <img src="assets/img/matarm.jpg" alt="Robotic arm simulation" />
             <div class="card-body">
               <p class="tag">Robotics</p>
@@ -166,7 +165,7 @@
             </div>
           </button>
 
-          <button class="project-card project-open" data-project="leg-drawers">
+          <button class="project-card project-open" data-project="leg-drawers" type="button">
             <img src="assets/img/draw.png" alt="Ergonomic leg drawer CAD" />
             <div class="card-body">
               <p class="tag">Ergonomics</p>
@@ -181,7 +180,7 @@
         <h3>Personal Projects</h3>
 
         <div class="project-grid">
-          <button class="project-card project-open" data-project="faraday-bed">
+          <button class="project-card project-open" data-project="faraday-bed" type="button">
             <img src="assets/img/faraday.jpg" alt="Faraday cage bed prototype" />
             <div class="card-body">
               <p class="tag">Prototype</p>
@@ -190,7 +189,7 @@
             </div>
           </button>
 
-          <button class="project-card project-open" data-project="website">
+          <button class="project-card project-open" data-project="website" type="button">
             <img src="assets/img/website.jpg" alt="Portfolio website" />
             <div class="card-body">
               <p class="tag">Web</p>
@@ -297,7 +296,7 @@
 
   <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project details">
     <div class="modal-content">
-      <button class="modal-close" aria-label="Close project">×</button>
+      <button class="modal-close" aria-label="Close project" type="button">×</button>
       <div id="modal-body"></div>
     </div>
   </div>
