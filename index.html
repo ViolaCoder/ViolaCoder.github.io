@@ -6,15 +6,14 @@
   <title>Nathan Robinson | Mechanical Engineering Portfolio</title>
   <link rel="stylesheet" href="css/portfolio.css" />
 </head>
-
 <body>
   <header class="site-header">
     <a class="logo" href="#top">Nathan Robinson</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="nav">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
       <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#resume">Resume</a>
       <a href="mailto:nkymenrobinson@gmail.com">Contact</a>
@@ -30,236 +29,136 @@
           I am a UCLA Mechanical Engineering student focused on CAD, prototyping,
           vehicle ergonomics, manufacturing, composites, and mechatronics.
         </p>
-
         <div class="hero-actions">
           <a class="button primary" href="#projects">View Projects</a>
-          <a class="button secondary" href="assets/img/Nathan_Robinson_Resume.pdf" target="_blank">Resume</a>
+          <a class="button secondary" href="assets/img/Nathan_Robinson_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
 
-     <div class="hero-side">
-  <div class="hero-card compact">
-    <img src="assets/img/WebsitePic.jpg" alt="Nathan Robinson" />
-    <div>
-      <h2>Current Focus</h2>
-      <p>Fall 2026 internships/co-ops in mechanical design, manufacturing, robotics, or aerospace.</p>
-    </div>
-  </div>
-
-  <div class="progress-panel">
-    <h3>Current Projects</h3>
-
-    <div class="progress-circle-grid">
-      <button class="progress-circle-card current-open" data-current="water-bottle">
-        <div class="circle-progress" style="--progress: 20">
-          <span>20%</span>
+      <aside class="hero-side" aria-label="Current focus and project progress">
+        <div class="hero-card compact">
+          <img src="assets/img/profile.jpg" alt="Nathan Robinson" />
+          <div>
+            <h2>Current Focus</h2>
+            <p>Fall 2026 internships/co-ops in mechanical design, manufacturing, robotics, or aerospace.</p>
+          </div>
         </div>
-        <p>Water Bottle Auto-Fill</p>
-      </button>
 
-      <button class="progress-circle-card current-open" data-current="busy-indicator">
-        <div class="circle-progress" style="--progress: 10">
-          <span>10%</span>
+        <div class="progress-panel">
+          <h3>Current Projects</h3>
+          <div class="progress-circle-grid">
+            <button class="progress-circle-card current-open" data-current="water-bottle">
+              <div class="circle-progress" style="--progress: 20"><span>20%</span></div>
+              <p>Water Bottle Auto-Fill</p>
+            </button>
+            <button class="progress-circle-card current-open" data-current="busy-indicator">
+              <div class="circle-progress" style="--progress: 10"><span>10%</span></div>
+              <p>Busy Indicator</p>
+            </button>
+            <button class="progress-circle-card current-open" data-current="blinds">
+              <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
+              <p>Automated Blinds</p>
+            </button>
+            <button class="progress-circle-card current-open" data-current="umbrella-robot">
+              <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
+              <p>Umbrella Robot</p>
+            </button>
+          </div>
         </div>
-        <p>Busy Indicator</p>
-      </button>
-
-      <button class="progress-circle-card current-open" data-current="blinds">
-        <div class="circle-progress" style="--progress: 5">
-          <span>5%</span>
-        </div>
-        <p>Automated Blinds</p>
-      </button>
-
-      <button class="progress-circle-card current-open" data-current="umbrella-robot">
-        <div class="circle-progress" style="--progress: 5">
-          <span>5%</span>
-        </div>
-        <p>Umbrella Robot</p>
-      </button>
-    </div>
-  </div>
-</div>
-   <section class="section" id="projects">
-  <div class="section-heading">
-    <p class="eyebrow">Selected Work</p>
-    <h2>Projects</h2>
-    <p class="section-subtitle">
-      Click any project to view documentation, design decisions, images, and build notes.
-    </p>
-  </div>
-
-  <div class="project-category">
-    <h3>Baja SAE</h3>
-    <div class="project-grid">
-
-      <button class="project-card project-open" data-project="baja-driver-model">
-        <img src="assets/img/model_cad_iteration1.png" alt="Baja driver CAD model">
-        <div class="card-body">
-          <p class="tag">Baja SAE</p>
-          <h4>Ergonomic Driver Model</h4>
-          <p>LiDAR-to-CAD workflow for validating driver fit and clearance.</p>
-        </div>
-      </button>
-
-      <button class="project-card project-open" data-project="baja-jig">
-        <img src="assets/img/Ergo_Jig_Andrew.jpg" alt="Adjustable ergonomic jig">
-        <div class="card-body">
-          <p class="tag">Baja SAE</p>
-          <h4>Adjustable Ergonomic Jig</h4>
-          <p>Physical jig for testing steering and pedal placement.</p>
-        </div>
-      </button>
-
-      <button class="project-card project-open" data-project="carbon-fiber">
-        <img src="assets/img/CFcar.jpg" alt="Carbon fiber components">
-        <div class="card-body">
-          <p class="tag">Composites</p>
-          <h4>Carbon Fiber Seat + Steering Wheel</h4>
-          <p>Composite manufacturing using wet layup and vacuum bagging.</p>
-        </div>
-      </button>
-
-    </div>
-  </div>
-
-  <div class="project-category">
-    <h3>Rocket Project UCLA</h3>
-    <div class="project-grid">
-
-      <button class="project-card project-open" data-project="rocket-bulkhead">
-        <img src="assets/img/bulk.png" alt="Rocket bulkhead CAD">
-        <div class="card-body">
-          <p class="tag">Structures</p>
-          <h4>Thrust Bulkhead</h4>
-          <p>Rocket internal structure designed around load path and manufacturability.</p>
-        </div>
-      </button>
-
-    </div>
-  </div>
-
-  <div class="project-category">
-    <h3>Class / Technical Projects</h3>
-    <div class="project-grid">
-
-      <button class="project-card project-open" data-project="robot-arm">
-        <img src="assets/img/matarm.jpg" alt="Robotic arm simulation">
-        <div class="card-body">
-          <p class="tag">Robotics</p>
-          <h4>3-DOF Robotic Arm Simulation</h4>
-          <p>MATLAB and Simscape arm simulation with inverse kinematics.</p>
-        </div>
-      </button>
-
-    </div>
-  </div>
-
-  <div class="project-category">
-    <h3>Personal Projects</h3>
-    <div class="project-grid">
-
-      <button class="project-card project-open" data-project="faraday-bed">
-        <img src="assets/img/faraday.jpg" alt="Faraday cage bed">
-        <div class="card-body">
-          <p class="tag">Prototype</p>
-          <h4>Faraday Cage Bed</h4>
-          <p>Dorm-compatible RF shielding and sleep environment prototype.</p>
-        </div>
-      </button>
-
-      <button class="project-card project-open" data-project="website">
-        <img src="assets/img/website.jpg" alt="Portfolio website">
-        <div class="card-body">
-          <p class="tag">Web</p>
-          <h4>Portfolio Website</h4>
-          <p>Personal engineering portfolio built with HTML, CSS, and JavaScript.</p>
-        </div>
-      </button>
-
-    </div>
-  </div>
-</section>
-
-<div class="project-modal" id="project-modal" aria-hidden="true">
-  <div class="modal-content">
-    <button class="modal-close" aria-label="Close project">×</button>
-    <div id="modal-body"></div>
-  </div>
-</div>
+      </aside>
     </section>
 
-    <section class="section split" id="experience">
-      <div>
-        <p class="eyebrow">Experience</p>
-        <h2>Engineering Experience</h2>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+        <p class="section-subtitle">Click any project to view documentation, design decisions, images, and build notes.</p>
       </div>
 
-      <div class="timeline">
-        <article>
-          <h3>Ergonomics Project Engineer — Bruin Racing Baja SAE</h3>
-          <p class="date">September 2024 – Present</p>
-          <p>
-            Design driver-interface systems for comfort, clearance, and cockpit packaging.
-            Work includes driver modeling, adjustable jigs, steering/pedal placement, and composite components.
-          </p>
-        </article>
+      <div class="project-category">
+        <h3>Baja SAE</h3>
+        <div class="project-grid">
+          <button class="project-card project-open" data-project="baja-driver-model">
+            <img src="assets/img/model_cad_iteration1.png" alt="Baja driver CAD model" />
+            <div class="card-body"><p class="tag">Baja SAE</p><h4>Ergonomic Driver Model</h4><p>LiDAR-to-CAD workflow for validating driver fit and clearance.</p></div>
+          </button>
+          <button class="project-card project-open" data-project="baja-jig">
+            <img src="assets/img/Ergo_Jig_Andrew.jpg" alt="Adjustable ergonomic jig" />
+            <div class="card-body"><p class="tag">Baja SAE</p><h4>Adjustable Ergonomic Jig</h4><p>Physical jig for testing steering and pedal placement.</p></div>
+          </button>
+          <button class="project-card project-open" data-project="carbon-fiber">
+            <img src="assets/img/CFcar.jpg" alt="Carbon fiber components in Baja car" />
+            <div class="card-body"><p class="tag">Composites</p><h4>Carbon Fiber Seat + Steering Wheel</h4><p>Composite manufacturing using wet layup and vacuum bagging.</p></div>
+          </button>
+        </div>
+      </div>
 
-        <article>
-          <h3>Internal Structures Member — Rocket Project UCLA</h3>
-          <p class="date">October 2025 – Present</p>
-          <p>
-            Designed thrust and recovery bulkhead concepts with attention to structural requirements,
-            weight, and manufacturability.
-          </p>
-        </article>
+      <div class="project-category">
+        <h3>Rocket Project UCLA</h3>
+        <div class="project-grid">
+          <button class="project-card project-open" data-project="rocket-bulkhead">
+            <img src="assets/img/bulk.png" alt="Rocket bulkhead CAD" />
+            <div class="card-body"><p class="tag">Structures</p><h4>Thrust Bulkhead</h4><p>Rocket internal structure designed around load path and manufacturability.</p></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h3>Class / Technical Projects</h3>
+        <div class="project-grid">
+          <button class="project-card project-open" data-project="robot-arm">
+            <img src="assets/img/matarm.jpg" alt="Robotic arm simulation" />
+            <div class="card-body"><p class="tag">Robotics</p><h4>3-DOF Robotic Arm Simulation</h4><p>MATLAB and Simscape arm simulation with inverse kinematics.</p></div>
+          </button>
+          <button class="project-card project-open" data-project="leg-drawers">
+            <img src="assets/img/draw.png" alt="Ergonomic leg drawer CAD" />
+            <div class="card-body"><p class="tag">Ergonomics</p><h4>Home Ergonomic Leg Drawers</h4><p>Adjustable leg rest concept with CAD, simulation, and fabrication.</p></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h3>Personal Projects</h3>
+        <div class="project-grid">
+          <button class="project-card project-open" data-project="faraday-bed">
+            <img src="assets/img/faraday.jpg" alt="Faraday cage bed prototype" />
+            <div class="card-body"><p class="tag">Prototype</p><h4>Faraday Cage Bed</h4><p>Dorm-compatible RF shielding and sleep environment prototype.</p></div>
+          </button>
+          <button class="project-card project-open" data-project="website">
+            <img src="assets/img/website.jpg" alt="Portfolio website" />
+            <div class="card-body"><p class="tag">Web</p><h4>Portfolio Website</h4><p>Personal engineering portfolio built with HTML, CSS, and JavaScript.</p></div>
+          </button>
+        </div>
       </div>
     </section>
 
     <section class="section split" id="research">
-  <div>
-    <p class="eyebrow">Research</p>
-    <h2>Research Work</h2>
-  </div>
+      <div><p class="eyebrow">Research</p><h2>Research Work</h2></div>
+      <div class="timeline">
+        <article>
+          <h3>Biomechatronics / Robotics Research</h3>
+          <p class="date">Summer 2026 – Present</p>
+          <p>Research section reserved for lab work, project contributions, experimental setup, CAD, electronics, data collection, and prototyping notes.</p>
+          <p>This section can be expanded once the research project becomes more defined.</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="timeline">
-    <article>
-      <h3>Biomechatronics / Robotics Research</h3>
-      <p class="date">Summer 2026 – Present</p>
-      <p>
-        Research section reserved for lab work, project contributions, design tasks,
-        experimental setup, data collection, CAD, electronics, and prototyping notes.
-      </p>
-      <p>
-        This section can be expanded once the research project becomes more defined.
-      </p>
-    </article>
-  </div>
-</section>
+    <section class="section split" id="experience">
+      <div><p class="eyebrow">Experience</p><h2>Engineering Experience</h2></div>
+      <div class="timeline">
+        <article><h3>Ergonomics Project Engineer — Bruin Racing Baja SAE</h3><p class="date">September 2024 – Present</p><p>Design driver-interface systems for comfort, clearance, and cockpit packaging. Work includes driver modeling, adjustable jigs, steering/pedal placement, and composite components.</p></article>
+        <article><h3>Internal Structures Member — Rocket Project UCLA</h3><p class="date">October 2025 – Present</p><p>Designed thrust and recovery bulkhead concepts with attention to structural requirements, weight, and manufacturability.</p></article>
+      </div>
+    </section>
 
     <section class="section" id="skills">
-      <div class="section-heading">
-        <p class="eyebrow">Tools</p>
-        <h2>Skills</h2>
-      </div>
-
+      <div class="section-heading"><p class="eyebrow">Tools</p><h2>Skills</h2></div>
       <div class="skills-grid">
-        <div>
-          <h3>CAD + Simulation</h3>
-          <p>SolidWorks, Fusion 360, SolidWorks Simulation, Simscape Multibody</p>
-        </div>
-        <div>
-          <h3>Manufacturing</h3>
-          <p>CNC milling, drill press, 3D printing, laser cutting, composites, vacuum bagging</p>
-        </div>
-        <div>
-          <h3>Programming + Electronics</h3>
-          <p>MATLAB, C++, Python, Arduino, ESP32</p>
-        </div>
-        <div>
-          <h3>Engineering Focus</h3>
-          <p>Mechanical design, prototyping, vehicle ergonomics, structures, mechatronics</p>
-        </div>
+        <div><h3>CAD + Simulation</h3><p>SolidWorks, Fusion 360, SolidWorks Simulation, Simscape Multibody</p></div>
+        <div><h3>Manufacturing</h3><p>CNC milling, drill press, 3D printing, laser cutting, composites, vacuum bagging</p></div>
+        <div><h3>Programming + Electronics</h3><p>MATLAB, C++, Python, Arduino, ESP32</p></div>
+        <div><h3>Engineering Focus</h3><p>Mechanical design, prototyping, vehicle ergonomics, structures, mechatronics</p></div>
       </div>
     </section>
 
@@ -267,16 +166,18 @@
       <p class="eyebrow">Resume</p>
       <h2>Want the one-page version?</h2>
       <p>Download my resume or contact me directly.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="assets/img/Nathan_Robinson_Resume.pdf" target="_blank">Open Resume</a>
-        <a class="button secondary" href="mailto:nkymenrobinson@gmail.com">Email Me</a>
-      </div>
+      <div class="hero-actions"><a class="button primary" href="assets/img/Nathan_Robinson_Resume.pdf" target="_blank" rel="noopener">Open Resume</a><a class="button secondary" href="mailto:nkymenrobinson@gmail.com">Email Me</a></div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nathan Robinson</p>
-  </footer>
+  <footer><p>© 2026 Nathan Robinson</p></footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close project">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
