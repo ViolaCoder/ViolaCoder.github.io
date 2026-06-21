@@ -392,7 +392,7 @@ ideas: {
         "Academic plans, classes to take seriously, research goals, internships, and things I want to improve before graduating."
     }
   ]
-}
+},
 
   aspirations: {
     title: "Aspirations",
@@ -482,15 +482,15 @@ function renderModal(project) {
       </div>
 
       ${(project.sections || [])
-        .map(
-          (section) => `
-           <section class="modal-section">
-  <h3>${section.heading}</h3>
-  ${section.html ? section.html : `<p>${section.body}</p>`}
-</section>
-          `
-        )
-        .join("")}
+  .map(
+    (section) => `
+      <section class="modal-section">
+        <h3>${section.heading}</h3>
+        ${section.html || `<p>${section.body}</p>`}
+      </section>
+    `
+  )
+  .join("")}
 
       ${
         project.gallery
