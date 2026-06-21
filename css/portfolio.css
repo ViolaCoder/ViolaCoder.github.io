@@ -443,3 +443,40 @@ body.modal-locked {
     grid-template-columns: 1fr;
   }
 }
+
+.current-projects {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.current-projects h3 {
+  margin-bottom: 14px;
+}
+
+.progress-item {
+  margin-bottom: 14px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 9px;
+  background: #e7dfd4;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
