@@ -646,3 +646,51 @@ body.modal-locked {
     font-size: 2.8rem;
   }
 }
+
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(20,24,28,.72);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.contact-modal.open {
+  display: flex;
+}
+
+.contact-modal-content {
+  width: min(500px, 90vw);
+  background: var(--bg);
+  border-radius: 28px;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 30px 90px rgba(0,0,0,.35);
+}
+
+.contact-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--text);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.contact-info {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-info strong {
+  display: block;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
