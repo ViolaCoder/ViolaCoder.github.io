@@ -775,3 +775,18 @@ footer {
 .modal-section h3 {
   color: var(--accent);
 }
+.essay-block h4 {
+  color: var(--accent);
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.essay-block h4:first-child {
+  margin-top: 0;
+}
+
+.essay-block p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
