@@ -494,3 +494,11 @@ if (contactModal) {
     }
   });
 }
+const secretButton = document.getElementById("secret-open");
+const secretSection = document.getElementById("personal");
+
+if (secretButton && secretSection) {
+  secretButton.addEventListener("click", () => {
+    secretSection.classList.toggle("open");
+  });
+}
