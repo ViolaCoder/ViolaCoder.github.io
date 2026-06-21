@@ -298,3 +298,129 @@ document.addEventListener("keydown", (event) => {
     closeProject();
   }
 });
+const currentProjects = {
+  "water-bottle": {
+    title: "Water Bottle Auto-Fill System",
+    category: "Current Project",
+    progress: "20%",
+    overview:
+      "Servo-actuated faucet controller for automatically filling a water bottle through repeatable timed cycles.",
+    sections: [
+      {
+        heading: "Goal",
+        body:
+          "Create a simple, repeatable setup that fills the bottle with one button press while accounting for the RO system flow slowing down over time."
+      },
+      {
+        heading: "Current Status",
+        body:
+          "Planning the actuation mechanism, mapping the faucet motion, and preparing CAD work. More useful prototyping will begin once the servo motors arrive."
+      },
+      {
+        heading: "Next Steps",
+        body:
+          "Measure fill timing, design the servo linkage, create a bottle/faucet alignment jig, and later 3D print the housing."
+      }
+    ]
+  },
+
+  "busy-indicator": {
+    title: "Busy Indicator",
+    category: "Current Project",
+    progress: "10%",
+    overview:
+      "A small visible indicator system to show when I am busy, recording, studying, or should not be interrupted.",
+    sections: [
+      {
+        heading: "Goal",
+        body:
+          "Build a simple physical status display that communicates availability clearly."
+      },
+      {
+        heading: "Current Status",
+        body:
+          "Concept stage. Main decisions are display type, enclosure style, and whether it should use buttons, LEDs, or wireless control."
+      }
+    ]
+  },
+
+  "blinds": {
+    title: "Automated Blinds",
+    category: "Current Project",
+    progress: "5%",
+    overview:
+      "Motorized blinds project for controlling room light automatically or with a simple user input.",
+    sections: [
+      {
+        heading: "Goal",
+        body:
+          "Create a compact mechanism that can open and close blinds reliably without permanently modifying the apartment."
+      },
+      {
+        heading: "Current Status",
+        body:
+          "Early concept stage. Need to inspect the blind geometry and decide between servo, stepper, or geared DC motor actuation."
+      }
+    ]
+  },
+
+  "umbrella-robot": {
+    title: "Umbrella Robot",
+    category: "Current Project",
+    progress: "5%",
+    overview:
+      "Mobile robot concept that could carry or position an umbrella to provide shade or rain coverage.",
+    sections: [
+      {
+        heading: "Goal",
+        body:
+          "Explore a small wheeled robot platform with a mounted umbrella and basic stability/control constraints."
+      },
+      {
+        heading: "Current Status",
+        body:
+          "Idea stage. Needs early sketches, load/stability estimates, and drivetrain concept selection."
+      }
+    ]
+  }
+};
+
+function openCurrentProject(projectId) {
+  const project = currentProjects[projectId];
+  if (!project) return;
+
+  modalBody.innerHTML = `
+    <article>
+      <div class="modal-hero">
+        <p class="eyebrow">${project.category}</p>
+        <h2>${project.title}</h2>
+        <p>${project.overview}</p>
+        <div class="modal-meta">
+          <span>${project.progress} complete</span>
+          <span>In progress</span>
+        </div>
+      </div>
+
+      ${project.sections
+        .map(
+          (section) => `
+          <section class="modal-section">
+            <h3>${section.heading}</h3>
+            <p>${section.body}</p>
+          </section>
+        `
+        )
+        .join("")}
+    </article>
+  `;
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-locked");
+}
+
+document.querySelectorAll(".current-open").forEach((card) => {
+  card.addEventListener("click", () => {
+    openCurrentProject(card.dataset.current);
+  });
+});
