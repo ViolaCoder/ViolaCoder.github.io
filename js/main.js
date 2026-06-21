@@ -346,6 +346,8 @@ const currentProjects = {
 };
 
 function renderModal(project) {
+  if (!modal || !modalBody) return;
+
   modalBody.innerHTML = `
     <article>
       <div class="modal-hero">
@@ -423,7 +425,7 @@ if (modal) {
 }
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && modal.classList.contains("open")) {
+  if (event.key === "Escape" && modal && modal.classList.contains("open")) {
     closeModal();
   }
 });
