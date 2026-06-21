@@ -343,44 +343,45 @@ ideas: {
     "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
   sections: [
     {
-      heading: "Philosophies",
-      html: `
-        <div class="essay-block">
-          <h4>High School</h4>
-          <p>My philosophy is ever changing, likely because I am still young. In high school, I was more hot-headed and ambitious. I still have that ambition, but it was better manifested then.</p>
-          <p>I became interested in astronomy freshman year, and when COVID hit, that interest intensified. Thinking about the scale and futility of life radically shifted my perception and identity. I became bitter toward the external world because I noticed how much attention is wasted on stupid things when we only have one life.</p>
-          <p>I hated school assemblies. I hated class. I thought I could learn faster on my own and spend more time doing meaningful things. I did not fully know what meaningful things were, but I knew they were not in the classroom or assembly.</p>
-          <p>I began practicing violin seriously. That became meaning for me. I also got into politics. I do not think politics were especially meaningful, but developing opinions helped me develop, even if I still believe my optimal involvement in politics would be zero.</p>
+  heading: "Philosophies",
+  html: `
+    <div class="essay-block">
+      <h4>High School</h4>
 
-          <h4>The Ideal</h4>
-          <p>I dedicated myself to looking as good as possible for college. I did clubs, AP classes, instrumental conservatory, morning workouts, and long school days. I thought all that effort was effort I was putting into myself.</p>
-          <p>I wanted to get as close to my potential as possible. To me, potential was The Ideal: the version of yourself that the ideal version of yourself would recognize as ideal.</p>
-          <p>That sounds circular, but I think it is true that what we think we want is often not what we actually want, and what we actually want is not always what is best. Even if my idea of The Ideal was imperfect, I believed moving toward it would still bring me closer than staying where I was.</p>
-          <p>I liked encouraging others to do the same. I felt like a catalyst. I brought friends to the gym. I wanted people to do meaningful things instead of wasting time on trivialities.</p>
+      <p>My philosophy is ever changing, likely due to the nature of being fairly young. When I was in high school, I was more hot-headed and ambitious. I still have that ambition, but it was better manifested in high school. I got really into astronomy in my freshman year, expanding on it when COVID hit in March. The futility of life was detrimental to my sense of control and everything that I experienced a radical shift in my perception and identity. I became more bitter at the external because I noticed all of the stupid things that we focus on and that try to grab our attention, when we only have one life. So much time wasted by poor planning. I hated school assemblies. I hated class. I hated these things because I thought I could learn faster on my own and have more time to do meaningful things. I didn't know what meaningful things were, but I knew that it wasn't in the classroom or in the assembly. I began practicing violin seriously. That became meaning for me. I got into politics. I never particularly thought politics were meaningful, but I do think that me gaining opinions on matters helped with development, even if I still believe that my involvement in politics would optimally be at 0%.</p>
 
-          <h4>College</h4>
-          <p>In college, my perspective changed again. Previous Nathan was hot-headed and ambitious. I still respect that version of myself and often want to reclaim him, but I am more mature now.</p>
-          <p>Engineering helped me see the flaws in everything. Even designing simple components requires tolerances, clearance, manufacturing limits, and tradeoffs. Perfection is impossible, or at least infeasible.</p>
-          <p>I still believe we should limit the time we waste for other people. I still get angry at useless institutional requirements because they consume thousands of hours across thousands of students for almost no meaningful result.</p>
-          <p>But this philosophy also prevented me from growing. Everyone praises taking the road less traveled, but some roads are less traveled because they go nowhere. The chalice may be in the darkest forest, but walking in without a plan can leave you lost.</p>
-          <p>For my first two years of college, I only went to classes when I thought I needed to. I believed I could learn better on my own. I was half-right. I had the endurance to learn from a textbook and pencil, but not always the discipline to do it at the correct time. School was structure.</p>
-          <p>Music reinforced this because the classes were easy but attendance was mandatory. I felt trapped when I could have been practicing or studying difficult engineering classes.</p>
+      <h4>The Ideal</h4>
 
-          <h4>Recognition and Self-Worth</h4>
-          <p>I quit music at the end of Winter sophomore year. I was good, and I do not think people give me enough credit. I do not show myself or brag much, so I often see people I think are less accomplished receive praise I wish I had received.</p>
-          <p>The lack of external recognition burdened me. I wondered why, if I was a Baja Project Engineer, had double-majored in music, and had survived hard mechanical engineering classes, I still was not near where I wanted to be.</p>
-          <p>I encourage criticism because I want to see the entirety of myself: where I shine and where I need polish. But because of this, I am extremely self-critical. I often confuse lack of external validation with lack of progress.</p>
-          <p>High school was the hero’s journey. College has felt like the degradation after accomplishing the destruction of the ring.</p>
+      <p>I dedicated myself to trying to look the best for college. I did so many clubs. I took every AP that I could. I did instrumental conservatory after school, which would make 3/5 days 8:30 am to 5:45 pm. I went to work out in the morning too, which would require me to be at school at 6:30 am. All this effort into college was effort that I thought I was putting into myself. I wanted to get as close to my potential as possible, as my idea of potential is that it is The Ideal. It is the version of yourself that The Ideal version of yourself would say is Ideal. Now that seems sort of circular, but I say this in this way because it is true that oftentimes what we think we want is not what we actually want. And sometimes what we actually want is not what is actually best. So, if we have an ideal, it is likely that that ideal is not The Ideal, which can only be manifested if you were already The Ideal.</p>
 
-          <h4>The Future / Current Snapshot</h4>
-          <p>Noise is noise. Data is data. When they mix, the signal becomes harder to decipher. I think I have put too much emphasis on feedback, because not all feedback is useful.</p>
-          <p>If I were a drone operating with limited noise reduction, high-frequency feedback could make me veer off and destroy myself. But that does not mean feedback should be ignored. It means it should be filtered.</p>
-          <p>Comparing myself to myself, to other people, and back to myself may give me a better map than only listening to the external world.</p>
-          <p>I have many goals. I know I can do them, but I need proof from myself. I need to know I am not just talk. I know I have accomplished things before, but I want documented evidence that, at least at one time, I was competent at the things I enjoy.</p>
-          <p>I am a jack of all trades. I want to master at least one.</p>
-        </div>
-      `
-    },
+      <p>Now, enough semantics. I strove for The Ideal. I believed that even if my idea of The Ideal is not what the actual Ideal is, then that would be alright because I was almost certain that it would be closer to it than where I was then.</p>
+
+      <p>I liked to encourage people to do the same. It's sort of like religion, when you think you are saving someone. Not in the savior complex way, but in a "I feel good because I am helping this person who would have otherwise stayed the same." I went to the gym, and many friends started coming with me. I felt like I was a good catalyst. I felt like I was bringing people to do meaningful things, instead of waste their time with "trivialities."</p>
+
+      <h4>College</h4>
+
+      <p>Now that I'm in University, my perspective has undergone another paradigm shift. Previous Nathan was hot headed and ambitious, which I still respect, and often try to reclaim that part of myself, but now I am more mature. Engineering has helped me see the flaws in everything. Even designing components, you have to consider tolerances and design for clearance and understand the manufacturing limitations. It is impossible, or at the very least, infeasible to create something perfect. I still agree with previous Nathan that we should try to limit the amount of time we waste for other people. I still get angry at the EDI and harassment training because the odds that it prevents something is virtually 0. The school knows that we know that it is nonsense, but they do it anyways to cover their behinds. The issue is that it takes hours to complete. Run that across 30k students, and you have a significant amount of time wasted on something so inconsequential that destroys a part of someone's day, when they could be doing something more meaningful with their one life on this planet.</p>
+
+      <p>This philosophy, however, has prevented me from growing. Following the philosophy means that you have to take the path less travelled. Everyone loves to read that poem and say that it's good to take that road, but there is a reason that some of those roads are less travelled. It is true that the chalice will be found in the darkest part of the forest, where no one wants to go, but it is also true that going in without a plan will leave you lost. It is also true that many roads look similar, and that the likely road that you will end up on is a road that is less travelled because it goes nowhere.</p>
+
+      <p>The first two years of college, I only went to classes that I needed to. The reason for this was because of my "time-wasting" philosophy, where I believed that I could learn better by myself. It turns out that I was half-right. I had the willpower and endurance to pick up what was necessary using only a textbook and a pencil, but I didn't have the discipline to do it at the correct time. School was structure. Of course, it didn't help that I was overloading each quarter because I was double majoring in music, which had completely different requirements. The music class reinforced my philosophy because the classes were super easy, but attendance was mandatory. I could be practicing. I could be studying for my actual difficult classes. Why was I trapped again?</p>
+
+      <p>I did this till the end of Winter, Sophomore year before quitting music. I was good. I think that people don't give me enough credit. Mainly because I don't show myself or brag, but I often see people, who I think are less accomplished, receiving praise that I think I should have received. This doesn't make me bitter, and I do acknowledge how pretentious this makes me seem, but I think for me to be understood, I would have to be lived.</p>
+
+      <p>The continuous indifference to my accomplishments and the potential that I see for myself did continue to burden me. It made me worried about my self worth. "If I'm a Project Engineer for Baja, I was double majoring in music, I somehow got an above average grade in the hardest Mech E class, then why am I not anywhere near where I want to be? Why am I not getting hired? Why is my friend group stagnant? Why was I better in high school?"</p>
+
+      <p>All of these questions plagued me. I am someone who encourages criticism because I like to see the entirety of me. I like to see where I shine and where I need polish. I like to try to look at the parts of myself that I want to keep hidden. Because of this, I am extremely critical of myself. I tend to equate the lack of external validation with a lack of progress. It very well could be a lack of progress. But then I feel this cognitive dissonance with what I believe I am and what I believe I could be with the external feedback of what the world thinks I am. What people I care about think I am. I realize that the face that people see is drastically different than the one I see in the mirror.</p>
+
+      <p>To sum this up, high school was the hero's journey. College has been the degradation after accomplishing the destruction of the ring.</p>
+
+      <h4>The Future/My Current</h4>
+
+      <p>Yes, I am still in college, but I do want to take a snapshot of where I am now.</p>
+
+      <p>Noise is noise. Data is data. When you put the two together, you get something that is a bit more difficult to decipher. I think that I put too much emphasis on feedback because not all feedback is useful. If I were a drone, operating with limited noise reduction, then at high frequencies, I may veer off and destroy myself. However, that doesn't mean that I ignore the feedback. The overused adage of a grain of salt proves to be true. Comparing myself to myself to other people then back to myself, mapping that trajectory should prove to provide me with a better map, rather than only listening to the external. I have these many goals. I know I can do it, but I just need the proof from myself. I need to know that I am not just talk. I do know that because of the previous things I have accomplished, but if you ask me to play a piece, I will do it poorly. If you ask me to do a trick, I will fall. If you ask me to edit a video, you will ask for your money back. I am a jack of all trades. I want to at least master one. At the very least, I want to be able to point to something documented to proved that at least at one time, I was competent at the things I enjoy.</p>
+    </div>
+  `
+},
     {
       heading: "Engineering Goals",
       body:
