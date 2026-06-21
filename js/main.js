@@ -141,10 +141,7 @@ const projects = {
           "This project combined SolidWorks modeling, mechanical reasoning, hand calculations, and design-for-manufacturing tradeoffs."
       }
     ],
-    gallery: [
-      "assets/img/bulk.png",
-      "assets/img/rocket.png"
-    ]
+    gallery: ["assets/img/bulk.png", "assets/img/rocket.png"]
   },
 
   "robot-arm": {
@@ -171,10 +168,7 @@ const projects = {
           "This project strengthened my understanding of kinematics, coordinate transformations, and simulation-based prototyping."
       }
     ],
-    gallery: [
-      "assets/img/matarm.jpg",
-      "assets/img/Sim.gif"
-    ]
+    gallery: ["assets/img/matarm.jpg", "assets/img/Sim.gif"]
   },
 
   "leg-drawers": {
@@ -196,9 +190,7 @@ const projects = {
           "The project involved CAD modeling, mechanical layout decisions, and evaluation of how the structure would support expected loads."
       }
     ],
-    gallery: [
-      "assets/img/draw.png"
-    ]
+    gallery: ["assets/img/draw.png"]
   },
 
   "faraday-bed": {
@@ -233,7 +225,7 @@ const projects = {
     ]
   },
 
-  "website": {
+  website: {
     title: "Portfolio Website",
     category: "Personal Project",
     hero: "assets/img/website.jpg",
@@ -252,9 +244,7 @@ const projects = {
           "The redesign prioritizes project cards, grouped categories, clean typography, and expandable project documentation."
       }
     ],
-    gallery: [
-      "assets/img/website.jpg"
-    ]
+    gallery: ["assets/img/website.jpg"]
   }
 };
 
@@ -345,6 +335,50 @@ const currentProjects = {
   }
 };
 
+const personalSections = {
+  ideas: {
+    title: "Ideas",
+    category: "Personal",
+    overview:
+      "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
+    sections: [
+      {
+        heading: "Current Notes",
+        body:
+          "Add ideas here later. This can include invention concepts, video ideas, writing fragments, strange builds, or anything that feels worth preserving."
+      }
+    ]
+  },
+
+  aspirations: {
+    title: "Aspirations",
+    category: "Personal",
+    overview:
+      "A place to write about the kind of life, work, family, environment, and character I want to build toward.",
+    sections: [
+      {
+        heading: "Direction",
+        body:
+          "Add aspirations here later. This could include career direction, personal principles, places I want to live, people I want to become closer to, and the kind of future I want."
+      }
+    ]
+  },
+
+  hobbies: {
+    title: "Hobbies",
+    category: "Personal",
+    overview:
+      "A place for music, books, films, habits, aesthetics, travel, and other non-engineering interests.",
+    sections: [
+      {
+        heading: "Non-Engineering",
+        body:
+          "Add hobbies here later. This can include viola, music, books, walking, film, YouTube ideas, or anything else that matters outside engineering."
+      }
+    ]
+  }
+};
+
 function renderModal(project) {
   if (!modal || !modalBody) return;
 
@@ -414,6 +448,13 @@ document.querySelectorAll(".current-open").forEach((card) => {
   });
 });
 
+document.querySelectorAll(".personal-open").forEach((card) => {
+  card.addEventListener("click", () => {
+    const section = personalSections[card.dataset.personal];
+    if (section) renderModal(section);
+  });
+});
+
 if (modalClose) {
   modalClose.addEventListener("click", closeModal);
 }
@@ -434,13 +475,13 @@ const contactModal = document.getElementById("contact-modal");
 const contactOpen = document.getElementById("contact-open");
 const contactClose = document.getElementById("contact-close");
 
-if (contactOpen) {
+if (contactOpen && contactModal) {
   contactOpen.addEventListener("click", () => {
     contactModal.classList.add("open");
   });
 }
 
-if (contactClose) {
+if (contactClose && contactModal) {
   contactClose.addEventListener("click", () => {
     contactModal.classList.remove("open");
   });
