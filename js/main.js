@@ -429,3 +429,27 @@ document.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+const contactModal = document.getElementById("contact-modal");
+const contactOpen = document.getElementById("contact-open");
+const contactClose = document.getElementById("contact-close");
+
+if (contactOpen) {
+  contactOpen.addEventListener("click", () => {
+    contactModal.classList.add("open");
+  });
+}
+
+if (contactClose) {
+  contactClose.addEventListener("click", () => {
+    contactModal.classList.remove("open");
+  });
+}
+
+if (contactModal) {
+  contactModal.addEventListener("click", (event) => {
+    if (event.target === contactModal) {
+      contactModal.classList.remove("open");
+    }
+  });
+}
