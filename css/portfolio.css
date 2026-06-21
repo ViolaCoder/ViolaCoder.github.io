@@ -744,3 +744,23 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.personal-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.personal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(31, 41, 51, 0.12);
+}
+
+.personal-card p {
+  color: var(--muted);
+}
