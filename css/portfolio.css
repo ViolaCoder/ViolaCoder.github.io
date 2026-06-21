@@ -764,3 +764,14 @@ footer {
 .personal-card p {
   color: var(--muted);
 }
+
+.modal-section {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.modal-section h3 {
+  color: var(--accent);
+}
