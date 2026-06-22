@@ -557,14 +557,15 @@ document.addEventListener("keydown", (event) => {
 });
 
 const contactModal = document.getElementById("contact-modal");
-const contactOpen = document.getElementById("contact-open");
 const contactClose = document.getElementById("contact-close");
 
-if (contactOpen && contactModal) {
-  contactOpen.addEventListener("click", () => {
-    contactModal.classList.add("open");
+document.querySelectorAll(".contact-trigger").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (contactModal) {
+      contactModal.classList.add("open");
+    }
   });
-}
+});
 
 if (contactClose && contactModal) {
   contactClose.addEventListener("click", () => {
