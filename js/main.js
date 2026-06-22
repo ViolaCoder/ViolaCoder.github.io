@@ -561,9 +561,7 @@ const contactClose = document.getElementById("contact-close");
 
 document.querySelectorAll(".contact-trigger").forEach((button) => {
   button.addEventListener("click", () => {
-    if (contactModal) {
-      contactModal.classList.add("open");
-    }
+    if (contactModal) contactModal.classList.add("open");
   });
 });
 
