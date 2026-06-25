@@ -49,38 +49,40 @@ const projects = {
     gallery: [
       "assets/img/model_cad_iteration1.png",
       "assets/img/model_mechanism.gif",
-      "assets/img/model_refined_simulation.gif"
+      "assets/img/model_refined_simulation.gif",
+      "assets/img/a4j74a.gif"
     ]
   },
 
   "baja-jig": {
     title: "Adjustable Ergonomic Jig",
     category: "Baja SAE",
-    hero: "assets/img/Ergo_Jig_Andrew.jpg",
+    hero: "assets/img/Demonstrationfr-ezgif.com-video-to-gif-converter.gif",
     tags: ["SolidWorks", "80/20", "Driver Testing", "Vehicle Ergonomics"],
     overview:
-      "Designed and tested an adjustable physical jig for steering wheel and pedal placement experiments.",
+      "Designed and tested an adjustable physical jig for steering wheel and pedal placement validation.",
     sections: [
       {
         heading: "Problem",
         body:
-          "Before finalizing the chassis, the team needed physical driver feedback on steering position, pedal placement, and cockpit comfort."
+          "Before finalizing the chassis based on the LiDAR models, Driver Interface requires physical driver feedback on steering position, pedal placement, and cockpit comfort to validate the SolidWorks designs, created with theoretical comfort angles."
       },
       {
         heading: "Design",
         body:
-          "The jig was designed to allow repeatable adjustments to key driver-interface dimensions so different drivers could test configurations."
+          "The jig was designed to allow for easy, repeatable adjustments to key driver interface dimensions, allowing for subtle alterations to optimize for driver comfort and system integration."
       },
       {
-        heading: "Impact",
+        heading: "Result",
         body:
-          "The jig connected CAD packaging decisions with real driver feedback, reducing guesswork in the ergonomics design process."
+          "The jig validated CAD packaging decisions with real driver feedback, allowing for a confident manufacturing process."
       }
     ],
     gallery: [
       "assets/img/Ergo_Jig_Andrew.jpg",
       "assets/img/Pedal.gif",
-      "assets/img/Steering.gif"
+      "assets/img/Steering.gif",
+      "assets/img/Demonstrationfr-ezgif.com-video-to-gif-converter.gif"
     ]
   },
 
@@ -90,22 +92,22 @@ const projects = {
     hero: "assets/img/CFcar.jpg",
     tags: ["Carbon Fiber", "Wet Layup", "Vacuum Bagging", "Manufacturing"],
     overview:
-      "Manufactured composite Baja components using wet layup, vacuum bagging, trimming, finishing, and vehicle fitment.",
+      "Manufactured composite Baja components using wet layup, vacuum bagging, and oven.",
     sections: [
       {
         heading: "Goal",
         body:
-          "Produce lightweight, rigid driver-interface components while learning composite manufacturing methods."
+          "Produce lightweight, rigid driver-interface components."
       },
       {
         heading: "Manufacturing",
         body:
-          "The process included fabric preparation, resin application, vacuum bagging, curing, trimming, sanding, and fitment checks."
+          "The process included fabric preparation, resin application, vacuum bagging, curing, trimming, sanding, and integration validation."
       },
       {
         heading: "Reflection",
         body:
-          "This project gave me hands-on experience with messy, tolerance-sensitive manufacturing where process control matters as much as CAD design."
+          "This project gave me hands-on experience with messy, geometrically complex, tolerance-sensitive manufacturing where precision and prudence is essential."
       }
     ],
     gallery: [
@@ -114,33 +116,6 @@ const projects = {
       "assets/img/CFsteering.jpg",
       "assets/img/CFdrip.jpg"
     ]
-  },
-
-  "rocket-bulkhead": {
-    title: "Thrust Bulkhead",
-    category: "Rocket Project UCLA",
-    hero: "assets/img/bulk.png",
-    tags: ["SolidWorks", "Structures", "Fasteners", "Hand Calculations"],
-    overview:
-      "Designed a rocket thrust bulkhead with attention to load transfer, bearing stress, fastener layout, and manufacturability.",
-    sections: [
-      {
-        heading: "Engineering Problem",
-        body:
-          "The bulkhead needed to transfer thrust loads into the rocket structure while remaining manufacturable and lightweight."
-      },
-      {
-        heading: "Design Work",
-        body:
-          "I evaluated fastener placement, material thickness, and bearing stress while balancing structural margin against packaging constraints."
-      },
-      {
-        heading: "Skills Used",
-        body:
-          "This project combined SolidWorks modeling, mechanical reasoning, hand calculations, and design-for-manufacturing tradeoffs."
-      }
-    ],
-    gallery: ["assets/img/bulk.png", "assets/img/rocket.png"]
   },
 
   "robot-arm": {
@@ -173,7 +148,7 @@ const projects = {
   "leg-drawers": {
     title: "Home Ergonomic Leg Drawers",
     category: "Class / Technical Project",
-    hero: "assets/img/draw.png",
+    hero: "assets/img/cabinetness.gif",
     tags: ["SolidWorks", "FEA", "Fabrication", "Ergonomics"],
     overview:
       "Designed an adjustable leg support system with CAD, simulation, and fabrication-oriented decision making.",
@@ -189,7 +164,9 @@ const projects = {
           "The project involved CAD modeling, mechanical layout decisions, and evaluation of how the structure would support expected loads."
       }
     ],
-    gallery: ["assets/img/draw.png"]
+    gallery: ["assets/img/draw.jpg",
+             "assets/img/cabinetness.gif"
+             ]
   },
 
   "faraday-bed": {
