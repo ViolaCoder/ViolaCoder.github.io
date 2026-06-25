@@ -558,7 +558,8 @@ const secretButton = document.getElementById("secret-open");
 const secretSection = document.getElementById("personal");
 
 if (secretButton && secretSection) {
-  secretButton.addEventListener("click", () => {
+  secretButton.addEventListener("click", (e) => {
+    e.preventDefault(); // Don't jump to the top of the page
     secretSection.classList.toggle("open");
   });
 }
