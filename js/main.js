@@ -25,7 +25,7 @@ const projects = {
   "baja-driver-model": {
     title: "Ergonomic Driver Model",
     category: "Baja SAE",
-    hero: "assets/img/model_cad_iteration1.png",
+    hero: "assets/img/model_refined_simulation.gif",
     tags: ["SolidWorks", "Fusion 360", "MeshLab", "LiDAR Scans"],
     overview:
       "Created a driver modeling workflow to evaluate driver fit, cockpit clearance, and rule compliance for the Baja SAE vehicle.",
@@ -33,24 +33,23 @@ const projects = {
       {
         heading: "Problem",
         body:
-          "The team needed a repeatable way to evaluate whether different drivers could fit comfortably and safely inside the cockpit while satisfying clearance requirements."
+          "To optimize driver packaging, maintaining rules compliance and minimizing weight, we needed a reliable method of modeling drivers in SolidWorks, accounting for numerous positions."
       },
       {
         heading: "Process",
         body:
-          "I used LiDAR scans, mesh cleanup, CAD segmentation, and SolidWorks assemblies to create driver models with adjustable joints and representative body dimensions."
+          "I used LiDAR scans of real drivers, processed the meshes, and brought simplified body models into CAD to evaluate clearance, helmet position, steering reach, pedal reach, and overall packaging. The models were movable at each joint, and I had 3 inch clearance shells around each body part to ensure rules compliance. I only was told the goal with no guidance on how to achieve it. This process required 4 different software as well as a lot of different, creative solutions to produce, which is why I am proud of it. It also facilitated collaboration across subteams, which allowed me to better understand the entirety of the car, as well as learn how to and when to compromise. "
       },
       {
         heading: "Result",
         body:
-          "The workflow helped expand the viable driver range by approximately 15% and gave the ergonomics team a clearer way to validate cockpit packaging decisions."
+          "The workflow helped expand the viable driver range by approximately 15% and gave the ergonomics team a clearer way to validate cockpit packaging decisions. This novel workflow will be used by future ergonomics project engineers, who will continue to improve it."
       }
     ],
     gallery: [
       "assets/img/model_cad_iteration1.png",
       "assets/img/model_mechanism.gif",
-      "assets/img/model_refined_simulation.gif",
-      "assets/img/bracing.png"
+      "assets/img/model_refined_simulation.gif"
     ]
   },
 
