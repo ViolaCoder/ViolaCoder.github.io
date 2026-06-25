@@ -230,42 +230,42 @@ const currentProjects = {
     category: "Current Project",
     progress: "20%",
     overview:
-      "Servo-actuated faucet controller for automatically filling a water bottle through repeatable timed cycles.",
+      "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
     sections: [
       {
         heading: "Goal",
         body:
-          "Create a simple, repeatable setup that fills the bottle with one button press while accounting for the RO system flow slowing down over time."
+          "Create a simple, user-friendly setup that fills the bottle with one button press while accounting for the reverse osmosis system flow slowing down over time, requiring multiple actuations within one cycle."
       },
       {
         heading: "Current Status",
         body:
-          "Planning the actuation mechanism, mapping the faucet motion, and preparing CAD work. More useful prototyping will begin once the servo motors arrive."
+          "Completed design of 3D printed components. Currently working on Servo logic."
       },
       {
         heading: "Next Steps",
         body:
-          "Measure fill timing, design the servo linkage, create a bottle/faucet alignment jig, and later 3D print the housing."
+          "Measure fill timing, design the servo linkage, and later 3D print the housing."
       }
     ]
   },
 
   "busy-indicator": {
-    title: "Busy Indicator",
+    title: "Room Communicator",
     category: "Current Project",
-    progress: "10%",
+    progress: "5%",
     overview:
-      "A small visible indicator system to show when I am busy, recording, studying, or should not be interrupted.",
+      "A small visible indicator system in multiple rooms to show when I am busy, recording, studying, or should not be interrupted. The current method of communication is yelling, which disrupts focus at bad times, so allowing for an indicator, as well as telecommunication through a speaking voice is required.",
     sections: [
       {
         heading: "Goal",
         body:
-          "Build a simple physical status display that communicates availability clearly."
+          "Create a display to allow for quick verification of status before communication. Busy status should allow for recorded messages, and for them to play immediately after switching status off. Available status should allow for instant telecommunication."
       },
       {
         heading: "Current Status",
         body:
-          "Concept stage. Main decisions are display type, enclosure style, and whether it should use buttons, LEDs, or wireless control."
+          "Concept stage."
       }
     ]
   },
@@ -280,12 +280,12 @@ const currentProjects = {
       {
         heading: "Goal",
         body:
-          "Create a compact mechanism that can open and close blinds reliably without permanently modifying the apartment."
+          "Create a compact mechanism that can roll and unroll blinds at high, inconvenient areas."
       },
       {
         heading: "Current Status",
         body:
-          "Early concept stage. Need to inspect the blind geometry and decide between servo, stepper, or geared DC motor actuation."
+          "Early concept stage."
       }
     ]
   },
@@ -293,9 +293,9 @@ const currentProjects = {
   "umbrella-robot": {
     title: "Umbrella Robot",
     category: "Current Project",
-    progress: "5%",
+    progress: "1%",
     overview:
-      "Mobile robot concept that could carry or position an umbrella to provide shade or rain coverage.",
+      "Mobile robot concept that could carry or position an umbrella to provide shade for outdoor working.",
     sections: [
       {
         heading: "Goal",
@@ -305,7 +305,7 @@ const currentProjects = {
       {
         heading: "Current Status",
         body:
-          "Idea stage. Needs early sketches, load/stability estimates, and drivetrain concept selection."
+          "Idea stage. Have multiple iterative plans, but will be very difficult project."
       }
     ]
   }
@@ -316,7 +316,7 @@ ideas: {
   title: "Ideas",
   category: "Personal",
   overview:
-    "A place for strange ideas, half-formed concepts, future projects, writing fragments, and thoughts that do not fit neatly into the engineering portfolio.",
+    "Anything that comes to mind.",
   sections: [
     {
   heading: "Philosophies",
@@ -375,7 +375,7 @@ ideas: {
     title: "Aspirations",
     category: "Personal",
     overview:
-      "A place to write about the kind of life, work, family, environment, and character I want to build toward.",
+      "End goals, mid goals, and now goals.",
     sections: [
       {
         heading: "End",
@@ -409,7 +409,7 @@ ideas: {
     title: "Hobbies",
     category: "Personal",
     overview:
-      "A place for music, books, films, habits, aesthetics, travel, and other non-engineering interests.",
+      "Stuff I like.",
     sections: [
       {
         heading: "Things to Do",
@@ -434,7 +434,7 @@ ideas: {
       {
         heading: "Music to Play",
         body:
-          "Viola pieces, songs, repertoire, chamber music, and musical ideas I want to return to."
+          "Stuff to do here. Better runaroo."
       }
     ]
   }
