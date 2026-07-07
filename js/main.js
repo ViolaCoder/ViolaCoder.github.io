@@ -89,7 +89,7 @@ const projects = {
   "carbon-fiber": {
     title: "Carbon Fiber Seat + Steering Wheel",
     category: "Baja SAE",
-    hero: "assets/img/CFcar.jpg",
+    hero: "assets/img/DI.jpg",
     tags: ["Carbon Fiber", "Wet Layup", "Vacuum Bagging", "Manufacturing"],
     overview:
       "Manufactured composite Baja components using wet layup, vacuum bagging, and oven.",
@@ -111,7 +111,7 @@ const projects = {
       }
     ],
     gallery: [
-      "assets/img/CFcar.jpg",
+      "assets/img/seatimg.jpg",
       "assets/img/CFseat.jpg",
       "assets/img/CFsteering.jpg",
       "assets/img/CFdrip.jpg"
