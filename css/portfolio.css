@@ -1590,3 +1590,18 @@ footer {
 .button {
   cursor: pointer;
 }
+
+.research-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.research-link:hover {
+  color: var(--accent);
+}
+
+.research-link::after {
+  content: " ↗";
+  color: var(--accent);
+}
