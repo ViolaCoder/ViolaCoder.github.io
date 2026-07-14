@@ -58,7 +58,7 @@ const projects = {
     title: "Adjustable Ergonomic Jig",
     category: "Baja SAE",
     hero: "assets/img/Demonstrationfr-ezgif.com-video-to-gif-converter.gif",
-    tags: ["SolidWorks", "80/20", "Driver Testing", "Vehicle Ergonomics"],
+    tags: ["SolidWorks", "Driver Testing", "Vehicle Ergonomics"],
     overview:
       "Designed and tested an adjustable physical jig for steering wheel and pedal placement validation.",
     sections: [
@@ -228,7 +228,7 @@ const currentProjects = {
   "water-bottle": {
     title: "Water Bottle Auto-Fill System",
     category: "Current Project",
-    progress: "20%",
+    progress: "30%",
     overview:
       "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
     sections: [
@@ -240,12 +240,12 @@ const currentProjects = {
       {
         heading: "Current Status",
         body:
-          "Completed design of 3D printed components. Currently working on Servo logic."
+          "Currently printing water bottle mount and servo housing. Prototype testing very soon."
       },
       {
         heading: "Next Steps",
         body:
-          "Measure fill timing, design the servo linkage, and later 3D print the housing."
+          "Measure fill timing; refine servo logic."
       }
     ]
   },
