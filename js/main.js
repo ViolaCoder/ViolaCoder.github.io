@@ -22,7 +22,7 @@ const modalBody = document.querySelector("#modal-body");
 const modalClose = document.querySelector(".modal-close");
 
 const projects = {
-  "baja-driver-model": {
+ "baja-driver-model": {
   title: "Ergonomic Driver Model",
   category: "Baja SAE",
   hero: "assets/img/model_refined_simulation.gif",
@@ -31,377 +31,24 @@ const projects = {
   overview:
     "Created a driver modeling workflow to evaluate driver fit, cockpit clearance, and rule compliance for the Baja SAE vehicle.",
 
+  documentation:
+    "assets/docs/baja-driver-model-documentation.pdf",
+
   sections: [
     {
-      heading: "Project Overview",
-      html: `
-        <p>
-          Add a brief explanation of the project, why it existed, and what you
-          personally contributed.
-        </p>
-
-        <div class="documentation-summary">
-          <div>
-            <strong>Role</strong>
-            <p>Project Engineer — Ergonomics</p>
-          </div>
-
-          <div>
-            <strong>Timeline</strong>
-            <p>Add timeline</p>
-          </div>
-
-          <div>
-            <strong>Team</strong>
-            <p>UCLA Baja SAE</p>
-          </div>
-
-          <div>
-            <strong>Status</strong>
-            <p>Completed</p>
-          </div>
-        </div>
-      `
+      heading: "Problem",
+      body:
+        "To optimize driver packaging while maintaining rules compliance and minimizing weight, we needed a reliable method of modeling drivers in SolidWorks across numerous possible positions."
     },
-
     {
-      heading: "Problem Statement",
-      html: `
-        <p>
-          To optimize driver packaging while maintaining rules compliance and
-          minimizing weight, we needed a reliable method of modeling drivers in
-          SolidWorks across numerous possible body positions.
-        </p>
-      `
+      heading: "Process",
+      body:
+        "I used LiDAR scans of real drivers, processed the meshes, and brought simplified articulated body models into CAD to evaluate clearance, helmet position, steering reach, pedal reach, and overall packaging."
     },
-
     {
-      heading: "Requirements and Constraints",
-      html: `
-        <h4>Requirements</h4>
-
-        <ul>
-          <li>Represent multiple real drivers accurately.</li>
-          <li>Allow the driver model to articulate at major joints.</li>
-          <li>Remain usable inside SolidWorks assemblies.</li>
-          <li>Support cockpit-clearance and driver-reach studies.</li>
-          <li>Account for Baja SAE clearance requirements.</li>
-        </ul>
-
-        <h4>Constraints</h4>
-
-        <ul>
-          <li>Limited access to specialized ergonomic-modeling software.</li>
-          <li>LiDAR scans contained complex and imperfect mesh geometry.</li>
-          <li>The final model needed to remain manageable in SolidWorks.</li>
-          <li>I was given the objective without an established workflow.</li>
-          <li>The process needed to be reusable by future team members.</li>
-        </ul>
-
-        <h4>Success Criteria</h4>
-
-        <p>
-          The workflow would be successful if it produced articulated driver
-          models that could be positioned inside the vehicle assembly and used
-          to evaluate clearance, reach, comfort, and rules compliance.
-        </p>
-      `
-    },
-
-    {
-      heading: "Initial Approach",
-      html: `
-        <p>
-          Explain your original plan for converting LiDAR scans into usable CAD
-          models.
-        </p>
-
-        <h4>Initial Assumptions</h4>
-
-        <ul>
-          <li>Add your first assumption.</li>
-          <li>Add your second assumption.</li>
-          <li>Add an assumption that later proved incorrect.</li>
-        </ul>
-      `
-    },
-
-    {
-      heading: "Design Process",
-      html: `
-        <p>
-          I used LiDAR scans of real drivers, processed the meshes, and brought
-          simplified body models into CAD to evaluate clearance, helmet
-          position, steering reach, pedal reach, and overall packaging.
-        </p>
-
-        <p>
-          The models were movable at each joint. I also created three-inch
-          clearance shells around the body segments to evaluate rules
-          compliance.
-        </p>
-
-        <p>
-          The workflow required four different software packages and several
-          custom solutions because no established team process existed.
-        </p>
-
-        <h4>Software Workflow</h4>
-
-        <ol>
-          <li>Capture the driver's body geometry using LiDAR.</li>
-          <li>Clean and simplify the resulting mesh.</li>
-          <li>Separate or prepare body segments for articulation.</li>
-          <li>Import the geometry into CAD.</li>
-          <li>Create joint relationships between body segments.</li>
-          <li>Add clearance geometry around relevant body regions.</li>
-          <li>Position the model inside the vehicle assembly.</li>
-        </ol>
-      `
-    },
-
-    {
-      heading: "Design Iterations",
-      html: `
-        <div class="design-iteration">
-          <h4>Iteration 1 — Initial Scan Import</h4>
-
-          <h5>Objective</h5>
-          <p>
-            Explain what you were attempting to accomplish in the first
-            iteration.
-          </p>
-
-          <h5>Expected Result</h5>
-          <p>
-            Explain what you expected the imported scan to allow you to do.
-          </p>
-
-          <h5>Actual Result</h5>
-          <p>
-            Explain what went wrong or what limitations appeared.
-          </p>
-
-          <h5>Lesson</h5>
-          <p>
-            Explain how this changed your next approach.
-          </p>
-        </div>
-
-        <div class="design-iteration">
-          <h4>Iteration 2 — Segmented Driver Model</h4>
-
-          <h5>What Changed</h5>
-          <p>
-            Explain how you segmented or simplified the model.
-          </p>
-
-          <h5>Why</h5>
-          <p>
-            Explain why the previous model could not articulate properly.
-          </p>
-
-          <h5>Actual Result</h5>
-          <p>
-            Explain what improved and what still needed work.
-          </p>
-        </div>
-
-        <div class="design-iteration">
-          <h4>Final Iteration — Articulated Clearance Model</h4>
-
-          <p>
-            Explain the final ball-joint body structure, clearance shells, and
-            how the model was integrated into the vehicle assembly.
-          </p>
-        </div>
-      `
-    },
-
-    {
-      heading: "Major Engineering Decisions",
-      html: `
-        <div class="engineering-decision">
-          <h4>Decision — Simplify the LiDAR Mesh</h4>
-
-          <h5>Why It Was Necessary</h5>
-          <p>
-            Add why the original scan was too complex or difficult to use
-            directly in SolidWorks.
-          </p>
-
-          <h5>Alternatives Considered</h5>
-          <ul>
-            <li>Use the original high-resolution mesh.</li>
-            <li>Create a driver model manually from measurements.</li>
-            <li>Use a generic digital human model.</li>
-            <li>Simplify a scan of each real driver.</li>
-          </ul>
-
-          <h5>Final Reasoning</h5>
-          <p>
-            Explain why your selected approach provided the best balance of
-            driver accuracy, CAD performance, and development time.
-          </p>
-        </div>
-
-        <div class="engineering-decision">
-          <h4>Decision — Use Articulated Body Segments</h4>
-
-          <h5>Why</h5>
-          <p>
-            Explain why a rigid scan could not represent the range of possible
-            driving positions.
-          </p>
-
-          <h5>Tradeoffs</h5>
-          <ul>
-            <li>More setup time.</li>
-            <li>More complicated CAD relationships.</li>
-            <li>Greater positioning flexibility.</li>
-            <li>Improved usefulness for packaging studies.</li>
-          </ul>
-        </div>
-      `
-    },
-
-    {
-      heading: "Validation",
-      html: `
-        <h4>Validation Methods</h4>
-
-        <ul>
-          <li>Compared CAD positioning with real driver posture.</li>
-          <li>Checked helmet and body clearance inside the cockpit.</li>
-          <li>Evaluated steering-wheel reach.</li>
-          <li>Evaluated pedal reach.</li>
-          <li>Used the models during vehicle-packaging discussions.</li>
-          <li>Compared theoretical packaging decisions with physical testing.</li>
-        </ul>
-
-        <h4>Remaining Uncertainty</h4>
-
-        <p>
-          Add any dimensions, posture differences, scan inaccuracies, or
-          articulation limitations that were not fully validated.
-        </p>
-      `
-    },
-
-    {
-      heading: "Results",
-      html: `
-        <ul>
-          <li>
-            The workflow helped expand the viable driver range by approximately
-            15%.
-          </li>
-
-          <li>
-            It gave the ergonomics team a clearer method for validating cockpit
-            packaging decisions.
-          </li>
-
-          <li>
-            It supported collaboration between ergonomics and other vehicle
-            subteams.
-          </li>
-
-          <li>
-            The workflow can be reused and improved by future ergonomics project
-            engineers.
-          </li>
-        </ul>
-      `
-    },
-
-    {
-      heading: "What I Would Change",
-      html: `
-        <h4>Biggest Limitation</h4>
-
-        <p>
-          Add the largest technical or organizational limitation of the
-          workflow.
-        </p>
-
-        <h4>What I Would Do Differently</h4>
-
-        <p>
-          Explain how you would organize the scan-processing, articulation, or
-          validation process if you started again.
-        </p>
-
-        <h4>Next Version</h4>
-
-        <p>
-          Explain what you would automate, measure more carefully, or redesign
-          in a future version.
-        </p>
-      `
-    },
-
-    {
-      heading: "Engineering Lessons",
-      html: `
-        <ul>
-          <li>
-            A technically accurate model is not useful if it is too
-            computationally expensive or cumbersome for the team to operate.
-          </li>
-
-          <li>
-            Engineering workflows should be designed for repeatability and
-            knowledge transfer, not only for a single result.
-          </li>
-
-          <li>
-            Physical testing remains important even when a detailed CAD model is
-            available.
-          </li>
-
-          <li>
-            Cross-subteam communication is necessary because ergonomic
-            improvements can affect chassis, steering, pedals, and other vehicle
-            systems.
-          </li>
-        </ul>
-      `
-    },
-
-    {
-      heading: "Interview Preparation",
-      html: `
-        <div class="interview-question">
-          <h4>Why did you use LiDAR rather than manual measurements?</h4>
-          <p>Add your answer.</p>
-        </div>
-
-        <div class="interview-question">
-          <h4>Why did the models need to articulate?</h4>
-          <p>Add your answer.</p>
-        </div>
-
-        <div class="interview-question">
-          <h4>How did you simplify the mesh without losing useful accuracy?</h4>
-          <p>Add your answer.</p>
-        </div>
-
-        <div class="interview-question">
-          <h4>How did you validate the model against a real driver?</h4>
-          <p>Add your answer.</p>
-        </div>
-
-        <div class="interview-question">
-          <h4>What was the most difficult part of the workflow?</h4>
-          <p>Add your answer.</p>
-        </div>
-
-        <div class="interview-question">
-          <h4>What would you improve if you repeated the project?</h4>
-          <p>Add your answer.</p>
-        </div>
-      `
+      heading: "Result",
+      body:
+        "The workflow helped expand the viable driver range by approximately 15% and created a repeatable process for future ergonomics project engineers."
     }
   ],
 
@@ -813,6 +460,21 @@ function renderModal(project) {
           ${(project.tags || []).map((tag) => `<span>${tag}</span>`).join("")}
           ${project.progress ? `<span>${project.progress} complete</span><span>In progress</span>` : ""}
         </div>
+
+        ${
+  project.documentation
+    ? `
+      <a
+        class="documentation-button"
+        href="${project.documentation}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Full Documentation ↗
+      </a>
+    `
+    : ""
+}
 
         ${project.hero ? `<img src="${project.hero}" alt="${project.title}">` : ""}
       </div>
