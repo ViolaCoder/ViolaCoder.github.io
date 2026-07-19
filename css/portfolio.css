@@ -1606,131 +1606,23 @@ footer {
   color: var(--accent);
 }
 
-
-/* =========================================================
-   EXTENSIVE PROJECT DOCUMENTATION
-   ========================================================= */
-
-.documentation-summary {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.documentation-summary > div {
-  padding: 1rem;
-  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.documentation-summary strong {
-  display: block;
-  margin-bottom: 0.35rem;
-}
-
-.documentation-summary p {
-  margin: 0;
-}
-
-.documentation-figure {
-  margin: 1.75rem 0;
-}
-
-.documentation-figure img {
-  display: block;
-  width: 100%;
-  max-height: 600px;
-  object-fit: contain;
-  border-radius: 12px;
-}
-
-.documentation-figure figcaption {
-  margin-top: 0.65rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  opacity: 0.75;
-}
-
-.design-iteration,
-.engineering-decision,
-.journal-entry,
-.interview-question,
-.calculation-block {
-  margin: 1.5rem 0;
-  padding: 1.25rem;
-  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.025);
-}
-
-.design-iteration h4,
-.engineering-decision h4,
-.journal-entry h4,
-.interview-question h4 {
-  margin-top: 0;
-}
-
-.design-iteration h5,
-.engineering-decision h5 {
-  margin-top: 1.25rem;
-  margin-bottom: 0.35rem;
-  font-size: 0.95rem;
-}
-
-.journal-date {
-  margin-bottom: 0.35rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  opacity: 0.65;
-}
-
-.equation {
-  overflow-x: auto;
-  padding: 1rem;
-  border-radius: 8px;
-  font-family: "Courier New", monospace;
-  background: rgba(0, 0, 0, 0.18);
-}
-
-.results-list li {
-  margin-bottom: 0.85rem;
-}
-
-.project-file-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.project-file-links a {
-  display: inline-block;
-  padding: 0.7rem 1rem;
+.documentation-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.1rem;
   border: 1px solid currentColor;
   border-radius: 999px;
   color: inherit;
+  font-weight: 600;
   text-decoration: none;
   transition:
     transform 0.2s ease,
     background-color 0.2s ease;
 }
 
-.project-file-links a:hover {
+.documentation-button:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.08);
-}
-
-@media (max-width: 600px) {
-  .documentation-summary {
-    grid-template-columns: 1fr;
-  }
-
-  .design-iteration,
-  .engineering-decision,
-  .journal-entry,
-  .interview-question,
-  .calculation-block {
-    padding: 1rem;
-  }
 }
