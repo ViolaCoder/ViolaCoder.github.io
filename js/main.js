@@ -1,3 +1,252 @@
+ChatGPT
+
+
+
+
+
+
+Pasted text.txt
+Document
+ok here are the files. Don't change the asset names because they are correct.
+
+html
+
+css
+:root{--bg:#f7f4ef;--text:#1f2933;--muted:#667085;--card:#fff;--accent:#1f4e5f;--accent-dark:#163b48;--border:#ddd6cc;--soft:#eee7dd;--shadow:0 20px 60px rgba(31,41,51,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}img{max-width:100%;display:block}button,input,textarea,select{font:inherit}.site-header{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(247,244,239,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}.logo{font-weight:900;color:var(--text);text-decoration:none}.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--text);text-decoration:none;font-weight:700;font-size:.95rem}.nav a:hover{color:var(--accent)}.nav-toggle{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--text)}.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);gap:46px;align-items:center;padding:48px 7%}.hero-text{min-width:0}.eyebrow{text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-size:.78rem;font-weight:900}h1{font-size:clamp(2.45rem,5.5vw,5.25rem);line-height:.98;margin:12px 0 24px;letter-spacing:-.055em}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;margin:0 0 18px;letter-spacing:-.035em}h3,h4{margin:0 0 8px;line-height:1.2}.hero-summary{max-width:720px;color:var(--muted);font-size:1.16rem}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:900;text-decoration:none;border:1px solid var(--accent)}.button.primary{background:var(--accent);color:#fff}.button.primary:hover{background:var(--accent-dark)}.button.secondary{color:var(--accent);background:transparent}.hero-side{display:grid;gap:18px}.hero-card,.progress-panel,.project-card,.timeline article,.skills-grid div{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow)}.hero-card{border-radius:28px;padding:18px}.hero-card.compact{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:center;padding:16px}.hero-card.compact img{width:92px;height:92px;border-radius:20px;object-fit:cover;margin:0}.hero-card.compact h2{font-size:1.2rem;margin-bottom:6px;letter-spacing:0}.hero-card.compact p{font-size:.9rem;margin:0;color:var(--muted)}.progress-panel{border-radius:28px;padding:20px}.progress-panel h3{margin-bottom:16px}.progress-circle-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.progress-circle-card{width:100%;border:1px solid var(--border);background:var(--bg);border-radius:20px;padding:14px 10px;cursor:pointer;text-align:center;color:inherit;transition:transform .2s ease,box-shadow .2s ease}.progress-circle-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(31,41,51,.12)}.circle-progress{--size:74px;width:var(--size);height:var(--size);margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle closest-side,var(--card) 72%,transparent 73%),conic-gradient(var(--accent) calc(var(--progress)*1%),#e7dfd4 0)}.circle-progress span{font-size:.9rem;font-weight:900;color:var(--accent)}.progress-circle-card p{margin:0;font-size:.82rem;font-weight:900;line-height:1.2}.section{padding:86px 7%}.section-heading{max-width:760px;margin-bottom:32px}.section-subtitle{color:var(--muted);max-width:700px}.project-category{margin-top:54px}.project-category>h3{font-size:1.55rem;margin-bottom:18px}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.project-card{width:100%;padding:0;text-align:left;cursor:pointer;border-radius:24px;overflow:hidden;color:inherit;transition:transform .2s ease,box-shadow .2s ease}.project-card:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(31,41,51,.12)}.project-card img{width:100%;height:280px;object-fit:cover;background:#ddd}.card-body{padding:22px}.tag{color:var(--accent);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px}.project-card h4{font-size:1.28rem}.project-card p,.project-card li,.timeline p,.skills-grid p,.resume-section p{color:var(--muted)}.split{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;border-top:1px solid var(--border)}.timeline{display:grid;gap:24px}.timeline article,.skills-grid div{border-radius:20px;padding:24px}.date{font-weight:800;color:var(--accent);margin-top:0}.skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.resume-section{text-align:center;max-width:900px;margin:auto}.resume-section .hero-actions{justify-content:center}footer{padding:32px 7%;color:var(--muted);border-top:1px solid var(--border)}.project-modal{position:fixed;inset:0;z-index:100;display:none;background:rgba(20,24,28,.72);padding:32px;overflow-y:auto}.project-modal.open{display:block}.modal-content{position:relative;max-width:1050px;margin:0 auto;background:var(--bg);border-radius:28px;padding:42px;box-shadow:0 30px 90px rgba(0,0,0,.35)}.modal-close{position:sticky;top:0;float:right;z-index:2;width:44px;height:44px;border:0;border-radius:50%;background:var(--text);color:#fff;font-size:2rem;line-height:1;cursor:pointer}.modal-hero{margin-bottom:32px}.modal-hero img{width:100%;max-height:460px;object-fit:cover;border-radius:22px;margin-top:24px}.modal-meta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.modal-meta span{background:#fff;border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:800;color:var(--accent)}.modal-section{margin:34px 0}.modal-section p,.modal-section li{color:var(--muted)}.modal-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.modal-gallery img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;background:#ddd}.modal-callout{padding:18px;border-radius:18px;background:#fff;border:1px solid var(--border)}body.modal-locked{overflow:hidden}@media (max-width:1000px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:58px}.hero-side{grid-template-columns:1fr 1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:760px){.site-header{padding:16px 5%}.nav{display:none;position:absolute;top:64px;right:5%;left:5%;flex-direction:column;align-items:flex-start;padding:18px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}.nav.open{display:flex}.nav-toggle{display:block}.hero,.section{padding-left:5%;padding-right:5%}.hero-side,.project-grid,.split,.skills-grid,.modal-gallery{grid-template-columns:1fr}.project-card img{height:230px}.project-modal{padding:12px}.modal-content{padding:24px}.hero-card.compact{grid-template-columns:76px 1fr}.hero-card.compact img{width:76px;height:76px}}@media (max-width:480px){.progress-circle-grid{grid-template-columns:1fr}.project-card img{height:210px}h1{font-size:2.45rem}}
+
+/* Hero redesign: profile card left, contact/progress right */
+.hero {
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 34px;
+}
+
+.hero-profile-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(230px, 0.46fr) minmax(0, 0.54fr);
+  gap: 28px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 34px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.profile-image-wrap img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 26px;
+  background: #ddd;
+}
+
+.profile-copy h1 {
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  margin-bottom: 12px;
+}
+
+.role-line {
+  color: var(--accent);
+  font-size: 1.08rem;
+  font-weight: 900;
+  margin: 0 0 14px;
+}
+
+.contact-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.contact-panel h2 {
+  font-size: 1.55rem;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+.contact-links {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.contact-links a::after {
+  content: "↗";
+  color: var(--accent);
+}
+
+.contact-links a[href^="mailto"]::after {
+  content: "→";
+}
+
+.contact-links a:hover {
+  transform: translateY(-2px);
+  color: var(--accent);
+  box-shadow: 0 10px 24px rgba(31, 41, 51, 0.1);
+}
+
+@media (max-width: 1000px) {
+  .hero-profile-card {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .hero-side {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-profile-card,
+  .hero-side {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image-wrap img {
+    max-height: 380px;
+  }
+}
+
+
+Pasted text(1).txt
+Document
+
+portfolio.css
+File
+
+main.js
+JavaScript
+ok it didn't work. I'll give you my java, css, and html
+
+
+
+index (2).html
+File
+
+portfolio (1).css
+File
+
+main (1).js
+JavaScript
+
+
+Pasted text(2).txt
+Document
+ok that's a bit too much instruction for me, so can you just add it in the correct spots and make it so I can control A control V? Here is my current main
+
+
+
+Pasted text(3).txt
+Document
+it says you got Minified React error #185; visit https://react.dev/errors/185 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Does that mean you didn't finish generating the code? This is what you generated. Generate the rest (and only the rest) if you didn't finish the generation.
+
+
+
+index (3).html
+File
+
+portfolio (2).css
+File
+
+main (2).js
+JavaScript
+The pop up buttons are visible without entering the secret room
+
+
+Pasted text(4).txt
+Document
+ok wait can you just give me a full copy pastable thing? Here is my Java file
+
+
+Pasted text(5).txt
+Document
+can you verify that this is correct?
+
+
+Pasted text(8).txt
+Document
+ok I'm a bit confused where to put the project thing in js. Here is my current js
+
+
+
+Pasted text(9).txt
+Document
+
+Worked for 3m 42s
+Here is the complete replacement main.js:
+
+main_documentation.js
+
+Open it, press Ctrl+A → Ctrl+C, then open your existing main.js and press Ctrl+A → Ctrl+V.
+
+Your existing projects, personal section, contact popup, secret section, and modal system are preserved from the uploaded file. 
+
+ 
+
+
+Inside every regular and current project, you will now see:
+
+documentation: {
+  projectOverview: "",
+  role: "",
+  timeline: "",
+  problemStatement: "",
+  functionalRequirements: [""],
+  designIterations: [
+    {
+      title: "",
+      objective: "",
+      whatChanged: "",
+      expectedResult: "",
+      actualResult: "",
+      failureMode: "",
+      lesson: ""
+    }
+  ],
+  // More documentation fields...
+},
+Search for:
+
+documentation:
+to jump between projects. Empty fields are automatically hidden, so unfinished documentation will not appear on the website.
+
+
+it doesn't let me download the file
+
+Use this link instead:
+
+main.js
+
+
+still no. Can you put it in a txt or maybe just have it copyable
+
+Try the text version:
+
+main.txt
+
+Then open it, press Ctrl+A, Ctrl+C, and paste everything into your existing main.js.
+
+
+main.txt
+
+
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
 
@@ -21,6 +270,598 @@ const modal = document.querySelector("#project-modal");
 const modalBody = document.querySelector("#modal-body");
 const modalClose = document.querySelector(".modal-close");
 
+/*
+  ============================================================
+  EXTENSIVE PROJECT DOCUMENTATION
+
+  Fill in the "documentation" object inside any project below.
+  Empty fields are automatically hidden from the website.
+  ============================================================
+*/
+
+function hasDocumentationContent(value) {
+  if (Array.isArray(value)) {
+    return value.some(hasDocumentationContent);
+  }
+
+  if (value && typeof value === "object") {
+    return Object.values(value).some(hasDocumentationContent);
+  }
+
+  return typeof value === "string"
+    ? value.trim().length > 0
+    : value !== null && value !== undefined && value !== false;
+}
+
+function documentationList(items = []) {
+  const visibleItems = items.filter(hasDocumentationContent);
+
+  if (!visibleItems.length) return "";
+
+  return `
+    <ul>
+      ${visibleItems.map((item) => `<li>${item}</li>`).join("")}
+    </ul>
+  `;
+}
+
+function documentationHeadingList(title, items = []) {
+  const list = documentationList(items);
+  return list ? `<h4>${title}</h4>${list}` : "";
+}
+
+function createDocumentationSections(documentation = {}) {
+  const sections = [];
+
+  const summaryItems = [
+    ["Role", documentation.role],
+    ["Timeline", documentation.timeline],
+    ["Team", documentation.team],
+    ["Status", documentation.status]
+  ].filter(([, value]) => hasDocumentationContent(value));
+
+  if (
+    hasDocumentationContent(documentation.projectOverview) ||
+    summaryItems.length
+  ) {
+    sections.push({
+      heading: "Project Overview",
+      html: `
+        ${
+          hasDocumentationContent(documentation.projectOverview)
+            ? `<p>${documentation.projectOverview}</p>`
+            : ""
+        }
+
+        ${
+          summaryItems.length
+            ? `
+              <div class="documentation-summary">
+                ${summaryItems
+                  .map(
+                    ([label, value]) => `
+                      <div>
+                        <strong>${label}</strong>
+                        <p>${value}</p>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+            `
+            : ""
+        }
+      `
+    });
+  }
+
+  if (hasDocumentationContent(documentation.problemStatement)) {
+    sections.push({
+      heading: "Problem Statement",
+      html: `<p>${documentation.problemStatement}</p>`
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.functionalRequirements) ||
+    hasDocumentationContent(documentation.performanceRequirements) ||
+    hasDocumentationContent(documentation.constraints) ||
+    hasDocumentationContent(documentation.successCriteria)
+  ) {
+    sections.push({
+      heading: "Requirements and Constraints",
+      html: `
+        ${documentationHeadingList(
+          "Functional Requirements",
+          documentation.functionalRequirements
+        )}
+        ${documentationHeadingList(
+          "Performance Requirements",
+          documentation.performanceRequirements
+        )}
+        ${documentationHeadingList("Constraints", documentation.constraints)}
+        ${documentationHeadingList(
+          "Success Criteria",
+          documentation.successCriteria
+        )}
+      `
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.backgroundResearch) ||
+    hasDocumentationContent(documentation.keyFindings)
+  ) {
+    sections.push({
+      heading: "Background Research",
+      html: `
+        ${
+          hasDocumentationContent(documentation.backgroundResearch)
+            ? `<p>${documentation.backgroundResearch}</p>`
+            : ""
+        }
+        ${
+          hasDocumentationContent(documentation.keyFindings)
+            ? `<h4>Key Findings</h4><p>${documentation.keyFindings}</p>`
+            : ""
+        }
+      `
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.initialApproach) ||
+    hasDocumentationContent(documentation.initialAssumptions)
+  ) {
+    sections.push({
+      heading: "Initial Approach",
+      html: `
+        ${
+          hasDocumentationContent(documentation.initialApproach)
+            ? `<p>${documentation.initialApproach}</p>`
+            : ""
+        }
+        ${documentationHeadingList(
+          "Initial Assumptions",
+          documentation.initialAssumptions
+        )}
+      `
+    });
+  }
+
+  const designIterations = (documentation.designIterations || []).filter(
+    hasDocumentationContent
+  );
+
+  if (designIterations.length) {
+    sections.push({
+      heading: "Design Iterations",
+      html: designIterations
+        .map(
+          (iteration, index) => `
+            <div class="design-iteration">
+              <h4>${iteration.title || `Iteration ${index + 1}`}</h4>
+
+              ${
+                hasDocumentationContent(iteration.objective)
+                  ? `<h5>Objective</h5><p>${iteration.objective}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.whatChanged)
+                  ? `<h5>What Changed</h5><p>${iteration.whatChanged}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.why)
+                  ? `<h5>Why</h5><p>${iteration.why}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.expectedResult)
+                  ? `<h5>Expected Result</h5><p>${iteration.expectedResult}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.actualResult)
+                  ? `<h5>Actual Result</h5><p>${iteration.actualResult}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.failureMode)
+                  ? `<h5>Failure Mode</h5><p>${iteration.failureMode}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.lesson)
+                  ? `<h5>Lesson</h5><p>${iteration.lesson}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(iteration.image)
+                  ? `
+                    <figure class="documentation-figure">
+                      <img
+                        src="${iteration.image}"
+                        alt="${iteration.imageAlt || iteration.title || "Project iteration"}"
+                      >
+                      ${
+                        hasDocumentationContent(iteration.caption)
+                          ? `<figcaption>${iteration.caption}</figcaption>`
+                          : ""
+                      }
+                    </figure>
+                  `
+                  : ""
+              }
+            </div>
+          `
+        )
+        .join("")
+    });
+  }
+
+  const engineeringDecisions = (
+    documentation.engineeringDecisions || []
+  ).filter(hasDocumentationContent);
+
+  if (engineeringDecisions.length) {
+    sections.push({
+      heading: "Major Engineering Decisions",
+      html: engineeringDecisions
+        .map(
+          (decision, index) => `
+            <div class="engineering-decision">
+              <h4>${decision.title || `Decision ${index + 1}`}</h4>
+
+              ${
+                hasDocumentationContent(decision.selectedApproach)
+                  ? `<h5>Selected Approach</h5><p>${decision.selectedApproach}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(decision.why)
+                  ? `<h5>Why It Was Considered</h5><p>${decision.why}</p>`
+                  : ""
+              }
+
+              ${documentationHeadingList(
+                "Alternatives",
+                decision.alternatives || []
+              )}
+
+              ${documentationHeadingList(
+                "Tradeoffs",
+                decision.tradeoffs || []
+              )}
+
+              ${
+                hasDocumentationContent(decision.finalReasoning)
+                  ? `<h5>Final Reasoning</h5><p>${decision.finalReasoning}</p>`
+                  : ""
+              }
+            </div>
+          `
+        )
+        .join("")
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.calculations) ||
+    hasDocumentationContent(documentation.simulation)
+  ) {
+    sections.push({
+      heading: "Engineering Analysis",
+      html: `
+        ${
+          hasDocumentationContent(documentation.calculations)
+            ? `<h4>Calculations</h4><div class="calculation-block">${documentation.calculations}</div>`
+            : ""
+        }
+
+        ${
+          hasDocumentationContent(documentation.simulation)
+            ? `<h4>Simulation</h4><p>${documentation.simulation}</p>`
+            : ""
+        }
+      `
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.manufacturingMaterial) ||
+    hasDocumentationContent(documentation.manufacturingProcess) ||
+    hasDocumentationContent(documentation.manufacturingEquipment) ||
+    hasDocumentationContent(documentation.manufacturingParameters) ||
+    hasDocumentationContent(documentation.manufacturingChallenges) ||
+    hasDocumentationContent(documentation.designForManufacturingChanges)
+  ) {
+    const manufacturingSummary = [
+      ["Material", documentation.manufacturingMaterial],
+      ["Process", documentation.manufacturingProcess],
+      ["Equipment", documentation.manufacturingEquipment]
+    ].filter(([, value]) => hasDocumentationContent(value));
+
+    sections.push({
+      heading: "Manufacturing",
+      html: `
+        ${
+          manufacturingSummary.length
+            ? `
+              <div class="documentation-summary">
+                ${manufacturingSummary
+                  .map(
+                    ([label, value]) => `
+                      <div>
+                        <strong>${label}</strong>
+                        <p>${value}</p>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+            `
+            : ""
+        }
+
+        ${documentationHeadingList(
+          "Manufacturing Parameters",
+          documentation.manufacturingParameters
+        )}
+
+        ${
+          hasDocumentationContent(documentation.manufacturingChallenges)
+            ? `<h4>Manufacturing Challenges</h4><p>${documentation.manufacturingChallenges}</p>`
+            : ""
+        }
+
+        ${
+          hasDocumentationContent(
+            documentation.designForManufacturingChanges
+          )
+            ? `<h4>Design for Manufacturing Changes</h4><p>${documentation.designForManufacturingChanges}</p>`
+            : ""
+        }
+      `
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.validationObjective) ||
+    hasDocumentationContent(documentation.validationProcedure) ||
+    hasDocumentationContent(documentation.validationResults) ||
+    hasDocumentationContent(documentation.validationConclusion) ||
+    hasDocumentationContent(documentation.validationImage)
+  ) {
+    sections.push({
+      heading: "Validation and Testing",
+      html: `
+        ${
+          hasDocumentationContent(documentation.validationObjective)
+            ? `<h4>Test Objective</h4><p>${documentation.validationObjective}</p>`
+            : ""
+        }
+
+        ${
+          hasDocumentationContent(documentation.validationProcedure)
+            ? `
+              <h4>Test Procedure</h4>
+              <ol>
+                ${documentation.validationProcedure
+                  .filter(hasDocumentationContent)
+                  .map((step) => `<li>${step}</li>`)
+                  .join("")}
+              </ol>
+            `
+            : ""
+        }
+
+        ${documentationHeadingList(
+          "Results",
+          documentation.validationResults
+        )}
+
+        ${
+          hasDocumentationContent(documentation.validationConclusion)
+            ? `<h4>Conclusion</h4><p>${documentation.validationConclusion}</p>`
+            : ""
+        }
+
+        ${
+          hasDocumentationContent(documentation.validationImage)
+            ? `
+              <figure class="documentation-figure">
+                <img
+                  src="${documentation.validationImage}"
+                  alt="${documentation.validationImageAlt || "Project validation test"}"
+                >
+                ${
+                  hasDocumentationContent(documentation.validationCaption)
+                    ? `<figcaption>${documentation.validationCaption}</figcaption>`
+                    : ""
+                }
+              </figure>
+            `
+            : ""
+        }
+      `
+    });
+  }
+
+  if (hasDocumentationContent(documentation.results)) {
+    sections.push({
+      heading: "Results",
+      html: documentationList(documentation.results)
+    });
+  }
+
+  const journalEntries = (documentation.designJournal || []).filter(
+    hasDocumentationContent
+  );
+
+  if (journalEntries.length) {
+    sections.push({
+      heading: "Design Journal",
+      html: journalEntries
+        .map(
+          (entry) => `
+            <div class="journal-entry">
+              ${
+                hasDocumentationContent(entry.date)
+                  ? `<p class="journal-date">${entry.date}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(entry.title)
+                  ? `<h4>${entry.title}</h4>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(entry.whatITried)
+                  ? `<p><strong>What I tried:</strong></p><p>${entry.whatITried}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(entry.expected)
+                  ? `<p><strong>What I expected:</strong></p><p>${entry.expected}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(entry.actual)
+                  ? `<p><strong>What happened:</strong></p><p>${entry.actual}</p>`
+                  : ""
+              }
+
+              ${
+                hasDocumentationContent(entry.learned)
+                  ? `<p><strong>What I learned:</strong></p><p>${entry.learned}</p>`
+                  : ""
+              }
+            </div>
+          `
+        )
+        .join("")
+    });
+  }
+
+  if (
+    hasDocumentationContent(documentation.biggestMistake) ||
+    hasDocumentationContent(documentation.whatIdDoDifferently) ||
+    hasDocumentationContent(documentation.remainingLimitations) ||
+    hasDocumentationContent(documentation.nextVersion)
+  ) {
+    sections.push({
+      heading: "What I Would Change",
+      html: `
+        ${
+          hasDocumentationContent(documentation.biggestMistake)
+            ? `<h4>Biggest Mistake</h4><p>${documentation.biggestMistake}</p>`
+            : ""
+        }
+
+        ${
+          hasDocumentationContent(documentation.whatIdDoDifferently)
+            ? `<h4>What I Would Do Differently</h4><p>${documentation.whatIdDoDifferently}</p>`
+            : ""
+        }
+
+        ${documentationHeadingList(
+          "Remaining Limitations",
+          documentation.remainingLimitations
+        )}
+
+        ${
+          hasDocumentationContent(documentation.nextVersion)
+            ? `<h4>Next Version</h4><p>${documentation.nextVersion}</p>`
+            : ""
+        }
+      `
+    });
+  }
+
+  if (hasDocumentationContent(documentation.engineeringLessons)) {
+    sections.push({
+      heading: "Engineering Lessons",
+      html: documentationList(documentation.engineeringLessons)
+    });
+  }
+
+  if (hasDocumentationContent(documentation.manufacturingLessons)) {
+    sections.push({
+      heading: "Manufacturing Lessons",
+      html: documentationList(documentation.manufacturingLessons)
+    });
+  }
+
+  const answeredInterviewQuestions = (
+    documentation.interviewQuestions || []
+  ).filter(
+    (item) =>
+      hasDocumentationContent(item.question) &&
+      hasDocumentationContent(item.answer)
+  );
+
+  if (answeredInterviewQuestions.length) {
+    sections.push({
+      heading: "Interview Preparation",
+      html: answeredInterviewQuestions
+        .map(
+          (item) => `
+            <div class="interview-question">
+              <h4>${item.question}</h4>
+              <p>${item.answer}</p>
+            </div>
+          `
+        )
+        .join("")
+    });
+  }
+
+  const projectFiles = (documentation.projectFiles || []).filter(
+    (file) =>
+      hasDocumentationContent(file.label) &&
+      hasDocumentationContent(file.href)
+  );
+
+  if (projectFiles.length) {
+    sections.push({
+      heading: "Project Files",
+      html: `
+        <div class="project-file-links">
+          ${projectFiles
+            .map(
+              (file) => `
+                <a
+                  href="${file.href}"
+                  ${file.download ? "download" : 'target="_blank" rel="noopener noreferrer"'}
+                >
+                  ${file.label}
+                </a>
+              `
+            )
+            .join("")}
+        </div>
+      `
+    });
+  }
+
+  return sections;
+}
+
+
 const projects = {
   "baja-driver-model": {
     title: "Ergonomic Driver Model",
@@ -29,6 +870,173 @@ const projects = {
     tags: ["SolidWorks", "Fusion 360", "MeshLab", "LiDAR Scans"],
     overview:
       "Created a driver modeling workflow to evaluate driver fit, cockpit clearance, and rule compliance for the Baja SAE vehicle.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Problem",
@@ -61,6 +1069,173 @@ const projects = {
     tags: ["SolidWorks", "Driver Testing", "Vehicle Ergonomics"],
     overview:
       "Designed and tested an adjustable physical jig for steering wheel and pedal placement validation.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Problem",
@@ -93,6 +1268,173 @@ const projects = {
     tags: ["Carbon Fiber", "Wet Layup", "Vacuum Bagging", "Manufacturing"],
     overview:
       "Manufactured composite Baja components using wet layup, vacuum bagging, and oven.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -125,6 +1467,173 @@ const projects = {
     tags: ["MATLAB", "Simscape", "Inverse Kinematics", "SolidWorks"],
     overview:
       "Built a simulated robotic arm using CAD import, inverse kinematics, and coordinate-based motion input.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Objective",
@@ -152,6 +1661,173 @@ const projects = {
     tags: ["SolidWorks", "FEA", "Fabrication", "Ergonomics"],
     overview:
       "Designed an adjustable leg support system with CAD, simulation, and fabrication-oriented decision making.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -176,6 +1852,173 @@ const projects = {
     tags: ["Prototyping", "SolidWorks", "Arduino", "Shielding"],
     overview:
       "Designed and built a dorm-compatible Faraday cage bed prototype to test RF shielding, blackout performance, airflow, and sleep discipline.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Motivation",
@@ -208,6 +2051,173 @@ const projects = {
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     overview:
       "A personal website for presenting engineering projects, documentation, resume material, and project photos.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Purpose",
@@ -231,6 +2241,173 @@ const currentProjects = {
     progress: "30%",
     overview:
       "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -256,6 +2433,173 @@ const currentProjects = {
     progress: "5%",
     overview:
       "A small visible indicator system in multiple rooms to show when I am busy, recording, studying, or should not be interrupted. The current method of communication is yelling, which disrupts focus at bad times, so allowing for an indicator, as well as telecommunication through a speaking voice is required.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -276,6 +2620,173 @@ const currentProjects = {
     progress: "5%",
     overview:
       "Motorized blinds project for controlling room light automatically or with a simple user input.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -296,6 +2807,173 @@ const currentProjects = {
     progress: "1%",
     overview:
       "Mobile robot concept that could carry or position an umbrella to provide shade for outdoor working.",
+    documentation: {
+      // Fill in any fields you want. Leave unused fields empty.
+      projectOverview: "",
+      role: "",
+      timeline: "",
+      team: "",
+      status: "",
+
+      problemStatement: "",
+
+      functionalRequirements: [
+        ""
+      ],
+
+      performanceRequirements: [
+        ""
+      ],
+
+      constraints: [
+        ""
+      ],
+
+      successCriteria: [
+        ""
+      ],
+
+      backgroundResearch: "",
+      keyFindings: "",
+
+      initialApproach: "",
+
+      initialAssumptions: [
+        ""
+      ],
+
+      designIterations: [
+        {
+          title: "",
+          objective: "",
+          whatChanged: "",
+          why: "",
+          expectedResult: "",
+          actualResult: "",
+          failureMode: "",
+          lesson: "",
+          image: "",
+          imageAlt: "",
+          caption: ""
+        }
+      ],
+
+      engineeringDecisions: [
+        {
+          title: "",
+          selectedApproach: "",
+          why: "",
+          alternatives: [
+            ""
+          ],
+          tradeoffs: [
+            ""
+          ],
+          finalReasoning: ""
+        }
+      ],
+
+      // You may use normal text or HTML, including equations and lists.
+      calculations: "",
+      simulation: "",
+
+      manufacturingMaterial: "",
+      manufacturingProcess: "",
+      manufacturingEquipment: "",
+
+      manufacturingParameters: [
+        ""
+      ],
+
+      manufacturingChallenges: "",
+      designForManufacturingChanges: "",
+
+      validationObjective: "",
+
+      validationProcedure: [
+        ""
+      ],
+
+      validationResults: [
+        ""
+      ],
+
+      validationConclusion: "",
+      validationImage: "",
+      validationImageAlt: "",
+      validationCaption: "",
+
+      results: [
+        ""
+      ],
+
+      designJournal: [
+        {
+          date: "",
+          title: "",
+          whatITried: "",
+          expected: "",
+          actual: "",
+          learned: ""
+        }
+      ],
+
+      biggestMistake: "",
+      whatIdDoDifferently: "",
+
+      remainingLimitations: [
+        ""
+      ],
+
+      nextVersion: "",
+
+      engineeringLessons: [
+        ""
+      ],
+
+      manufacturingLessons: [
+        ""
+      ],
+
+      interviewQuestions: [
+        {
+          question: "Why did you choose this design?",
+          answer: ""
+        },
+        {
+          question: "What was the most difficult technical problem?",
+          answer: ""
+        },
+        {
+          question: "What failed, and how did you respond?",
+          answer: ""
+        },
+        {
+          question: "How did you validate the design?",
+          answer: ""
+        },
+        {
+          question: "What assumptions did you make?",
+          answer: ""
+        },
+        {
+          question: "How would you manufacture 10,000 units?",
+          answer: ""
+        },
+        {
+          question: "What would you improve with more time?",
+          answer: ""
+        }
+      ],
+
+      projectFiles: [
+        {
+          label: "",
+          href: "",
+          download: false
+        }
+      ]
+    },
     sections: [
       {
         heading: "Goal",
@@ -458,7 +3136,10 @@ function renderModal(project) {
         ${project.hero ? `<img src="${project.hero}" alt="${project.title}">` : ""}
       </div>
 
-      ${(project.sections || [])
+      ${[
+        ...(project.sections || []),
+        ...createDocumentationSections(project.documentation)
+      ]
   .map(
     (section) => `
       <section class="modal-section">
