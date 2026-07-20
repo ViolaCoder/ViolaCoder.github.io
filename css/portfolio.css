@@ -1032,3 +1032,229 @@ footer {
     font-size: 1rem !important;
   }
 }
+
+
+/* =========================================================
+   CURRENT, NEXT, AND FUTURE PROJECTS
+   ========================================================= */
+
+.current-project-block,
+.next-project-block {
+  margin-bottom: 16px;
+}
+
+.project-status-label {
+  margin: 0 0 7px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.featured-progress-card,
+.next-project-card,
+.future-projects-card {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.featured-progress-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.featured-progress-card .circle-progress {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.featured-progress-copy {
+  min-width: 0;
+}
+
+.featured-progress-copy h4,
+.next-project-card h4,
+.future-projects-card h4 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.featured-progress-copy p,
+.next-project-card p,
+.future-projects-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.next-project-card,
+.future-projects-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 15px 16px;
+  border-radius: 18px;
+}
+
+.future-projects-card {
+  margin-top: 4px;
+  background: var(--card);
+}
+
+.featured-progress-card:hover,
+.next-project-card:hover,
+.future-projects-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(31, 41, 51, 0.12);
+}
+
+.next-project-arrow,
+.future-projects-arrow {
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.next-project-card:hover .next-project-arrow,
+.future-projects-card:hover .future-projects-arrow {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   FUTURE PROJECTS MODAL
+   ========================================================= */
+
+.future-projects-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  overflow-y: auto;
+  background: rgba(20, 24, 28, 0.72);
+}
+
+.future-projects-modal.open {
+  display: flex;
+}
+
+.future-projects-modal-content {
+  position: relative;
+  width: min(900px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 38px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--bg);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+}
+
+.future-projects-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--text);
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.future-project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.future-project-list article {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.future-project-list article h3 {
+  margin: 0 0 8px;
+}
+
+.future-project-list article p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.future-project-category {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Restore the intended mobile navigation behavior after the final nav override. */
+@media (max-width: 760px) {
+  .site-header .nav {
+    display: none;
+  }
+
+  .site-header .nav.open {
+    display: flex;
+  }
+
+  .featured-progress-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-progress-card .circle-progress {
+    margin: 0 auto;
+  }
+
+  .future-project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .future-projects-modal {
+    padding: 12px;
+  }
+
+  .future-projects-modal-content {
+    padding: 30px 22px 24px;
+  }
+}
