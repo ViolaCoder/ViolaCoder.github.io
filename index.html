@@ -101,30 +101,64 @@
         </div>
 
         <div class="progress-panel">
-          <h3>Current Projects</h3>
+  <h3>Projects in Progress</h3>
 
-          <div class="progress-circle-grid">
-            <button class="progress-circle-card current-open" data-current="water-bottle" type="button">
-              <div class="circle-progress" style="--progress: 30"><span>30%</span></div>
-              <p>Water Bottle Auto-Fill</p>
-            </button>
+  <div class="current-project-block">
+    <p class="project-status-label">Current Project</p>
 
-            <button class="progress-circle-card current-open" data-current="busy-indicator" type="button">
-              <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
-              <p>Room Communicator</p>
-            </button>
+    <button
+      class="featured-progress-card current-open"
+      data-current="water-bottle"
+      type="button"
+    >
+      <div class="circle-progress" style="--progress: 30">
+        <span>30%</span>
+      </div>
 
-            <button class="progress-circle-card current-open" data-current="blinds" type="button">
-              <div class="circle-progress" style="--progress: 5"><span>5%</span></div>
-              <p>Automated Blinds</p>
-            </button>
+      <div class="featured-progress-copy">
+        <h4>Water Bottle Auto-Fill</h4>
+        <p>
+          Automated RO-water dispensing using an ESP32, servo,
+          pushbutton, and timed refill cycles.
+        </p>
+      </div>
+    </button>
+  </div>
 
-            <button class="progress-circle-card current-open" data-current="umbrella-robot" type="button">
-              <div class="circle-progress" style="--progress: 1"><span>1%</span></div>
-              <p>Umbrella Robot</p>
-            </button>
-          </div>
-        </div>
+  <div class="next-project-block">
+    <p class="project-status-label">Next</p>
+
+    <button
+      class="next-project-card current-open"
+      data-current="busy-indicator"
+      type="button"
+    >
+      <div>
+        <h4>Room Communicator</h4>
+        <p>Wireless room-status indicator and communication system.</p>
+      </div>
+
+      <span class="next-project-arrow" aria-hidden="true">→</span>
+    </button>
+  </div>
+
+  <button
+    class="future-projects-card"
+    id="future-projects-open"
+    type="button"
+  >
+    <div>
+      <p class="project-status-label">Future Projects</p>
+      <h4>View Project Backlog</h4>
+      <p>
+        Browse planned robotics, automation, mechanical, and
+        mechatronics projects.
+      </p>
+    </div>
+
+    <span class="future-projects-arrow" aria-hidden="true">→</span>
+  </button>
+</div>
       </aside>
     </section>
 
@@ -382,7 +416,66 @@
   </div>
 
 </div>
+<div
+  class="future-projects-modal"
+  id="future-projects-modal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="future-projects-title"
+>
+  <div class="future-projects-modal-content">
+    <button
+      class="future-projects-close"
+      id="future-projects-close"
+      type="button"
+      aria-label="Close future projects"
+    >
+      ×
+    </button>
 
+    <p class="eyebrow">Project Backlog</p>
+    <h2 id="future-projects-title">Future Projects</h2>
+
+    <div class="future-project-list">
+      <article>
+        <p class="future-project-category">Automation</p>
+        <h3>Automated Blinds</h3>
+        <p>
+          Motorized blinds controlled through scheduled operation,
+          buttons, and environmental inputs.
+        </p>
+      </article>
+
+      <article>
+        <p class="future-project-category">Robotics</p>
+        <h3>Umbrella-Following Robot</h3>
+        <p>
+          Mobile robot designed to follow a user while positioning an
+          umbrella overhead.
+        </p>
+      </article>
+
+      <article>
+        <p class="future-project-category">Energy</p>
+        <h3>Stationary-Bike Generator</h3>
+        <p>
+          Generator system that converts exercise-bike motion into
+          usable electrical energy.
+        </p>
+      </article>
+
+      <article>
+        <p class="future-project-category">Robotics</p>
+        <h3>Small Carrier Robot</h3>
+        <p>
+          Compact wheeled platform designed to follow a user and carry
+          lightweight objects.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
   
   <script src="js/main.js"></script>
 </body>
