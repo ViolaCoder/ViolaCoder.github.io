@@ -57,6 +57,26 @@ select {
   text-decoration: none;
 }
 
+.logo a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+.logo a:hover {
+  color: var(--accent);
+}
+
+.logo-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
 .nav {
   display: flex;
   gap: 22px;
