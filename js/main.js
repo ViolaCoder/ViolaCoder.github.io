@@ -32,7 +32,7 @@ const projects = {
     "Created a driver modeling workflow to evaluate driver fit, cockpit clearance, and rule compliance for the Baja SAE vehicle.",
 
   documentation:
-    "assets/docs/LiDAR_Documentation.pdf",
+    "assets/img/LiDAR_Documentation.pdf",
 
   sections: [
     {
