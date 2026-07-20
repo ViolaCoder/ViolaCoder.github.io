@@ -622,3 +622,69 @@ if (documentationDropdown && documentationButton) {
         }
     });
 }
+
+
+// =========================================================
+// FUTURE PROJECTS MODAL
+// =========================================================
+
+const futureProjectsOpen = document.getElementById("future-projects-open");
+const futureProjectsModal = document.getElementById("future-projects-modal");
+const futureProjectsClose = document.getElementById("future-projects-close");
+
+function openFutureProjectsModal() {
+  if (!futureProjectsModal) return;
+
+  futureProjectsModal.classList.add("open");
+  futureProjectsModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-locked");
+
+  if (futureProjectsClose) {
+    futureProjectsClose.focus();
+  }
+}
+
+function closeFutureProjectsModal() {
+  if (!futureProjectsModal) return;
+
+  futureProjectsModal.classList.remove("open");
+  futureProjectsModal.setAttribute("aria-hidden", "true");
+
+  const anotherModalIsOpen =
+    (modal && modal.classList.contains("open")) ||
+    (contactModal && contactModal.classList.contains("open"));
+
+  if (!anotherModalIsOpen) {
+    document.body.classList.remove("modal-locked");
+  }
+
+  if (futureProjectsOpen) {
+    futureProjectsOpen.focus();
+  }
+}
+
+if (futureProjectsOpen && futureProjectsModal) {
+  futureProjectsOpen.addEventListener("click", openFutureProjectsModal);
+}
+
+if (futureProjectsClose && futureProjectsModal) {
+  futureProjectsClose.addEventListener("click", closeFutureProjectsModal);
+}
+
+if (futureProjectsModal) {
+  futureProjectsModal.addEventListener("click", (event) => {
+    if (event.target === futureProjectsModal) {
+      closeFutureProjectsModal();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    futureProjectsModal &&
+    futureProjectsModal.classList.contains("open")
+  ) {
+    closeFutureProjectsModal();
+  }
+});
