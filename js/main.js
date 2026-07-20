@@ -234,7 +234,7 @@ const currentProjects = {
   "water-bottle": {
     title: "Water Bottle Auto-Fill System",
     category: "Current Project",
-    progress: "30%",
+    progress: "95%",
     overview:
       "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
     sections: [
@@ -246,12 +246,12 @@ const currentProjects = {
       {
         heading: "Current Status",
         body:
-          "Currently printing water bottle mount and servo housing. Prototype testing very soon."
+          "Cycle timing tuning."
       },
       {
         heading: "Next Steps",
         body:
-          "Measure fill timing; refine servo logic."
+          "Documentation."
       }
     ]
   },
