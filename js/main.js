@@ -584,3 +584,41 @@ if (secretButton && secretSection) {
     secretSection.classList.toggle("open");
   });
 }
+
+const documentationDropdown = document.querySelector(".nav-dropdown");
+const documentationButton = document.querySelector(".nav-dropdown-button");
+
+if (documentationDropdown && documentationButton) {
+    documentationButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        const isOpen =
+            documentationDropdown.classList.toggle("is-open");
+
+        documentationButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!documentationDropdown.contains(event.target)) {
+            documentationDropdown.classList.remove("is-open");
+            documentationButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            documentationDropdown.classList.remove("is-open");
+            documentationButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+            documentationButton.focus();
+        }
+    });
+}
