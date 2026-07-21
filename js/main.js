@@ -67,6 +67,8 @@ const projects = {
     tags: ["SolidWorks", "Driver Testing", "Vehicle Ergonomics"],
     overview:
       "Designed and tested an adjustable physical jig for steering wheel and pedal placement validation.",
+    documentation:
+      "assets/img/Ergonomics_Jig.pdf",
     sections: [
       {
         heading: "Problem",
