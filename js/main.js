@@ -209,26 +209,21 @@ const projects = {
     ]
   },
 
-  website: {
-    title: "Portfolio Website",
+  bottle: {
+    title: "Faucet Timed Actuator",
     category: "Personal Project",
-    hero: "assets/img/website.jpg",
-    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    hero: "assets/img/schem.jpg",
+    tags: ["Embedded Systems", "3D Printing", "Iterative Design", "DFM/DFA"],
     overview:
-      "A personal website for presenting engineering projects, documentation, resume material, and project photos.",
+      "With the press of a button, the servo will actuate the faucet for 3 cycles until the 5-gallon bottle is filled.",
     sections: [
       {
         heading: "Purpose",
         body:
-          "The site is meant to help recruiters quickly understand my strongest engineering work while still preserving detailed project documentation."
+          "Manually filling the bottle is annoying, and if left on, the tank will take a significant amount of time to refill."
       },
-      {
-        heading: "Design Direction",
-        body:
-          "The redesign prioritizes project cards, grouped categories, clean typography, and expandable project documentation."
-      }
     ],
-    gallery: ["assets/img/website.jpg"]
+    gallery: ["assets/img/schem.jpg"]
   }
 };
 
