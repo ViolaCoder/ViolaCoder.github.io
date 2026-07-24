@@ -212,7 +212,7 @@ const projects = {
   bottle: {
     title: "Faucet Timed Actuator",
     category: "Personal Project",
-    hero: "assets/img/frontsetup.jpg",
+    hero: "assets/img/bottlething.gif",
     tags: ["Embedded Systems", "3D Printing", "Iterative Design", "DFM/DFA"],
     overview:
       "With the press of a button, the servo will actuate the faucet for 3 cycles until the 5-gallon bottle is filled.",
@@ -225,7 +225,9 @@ const projects = {
     ],
     gallery: [
       "assets/img/schem.jpg",
-      "assets/img/topsetup.jpg"]
+      "assets/img/topsetup.jpg",
+    "assets/img/frontsetup.jpg",
+    "assets/img/incline.jpg"]
   }
 };
 
