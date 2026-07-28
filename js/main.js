@@ -67,8 +67,6 @@ const projects = {
     tags: ["SolidWorks", "Driver Testing", "Vehicle Ergonomics"],
     overview:
       "Designed and tested an adjustable physical jig for steering wheel and pedal placement validation.",
-    documentation:
-      "assets/img/Ergonomics_Jig.pdf",
     sections: [
       {
         heading: "Problem",
@@ -209,25 +207,26 @@ const projects = {
     ]
   },
 
-  bottle: {
-    title: "Faucet Timed Actuator",
+  website: {
+    title: "Portfolio Website",
     category: "Personal Project",
-    hero: "assets/img/bottlething.gif",
-    tags: ["Embedded Systems", "3D Printing", "Iterative Design", "DFM/DFA"],
+    hero: "assets/img/website.jpg",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     overview:
-      "With the press of a button, the servo will actuate the faucet for 3 cycles until the 5-gallon bottle is filled.",
+      "A personal website for presenting engineering projects, documentation, resume material, and project photos.",
     sections: [
       {
         heading: "Purpose",
         body:
-          "Manually filling the bottle is annoying, and if left on, the tank will take a significant amount of time to refill."
+          "The site is meant to help recruiters quickly understand my strongest engineering work while still preserving detailed project documentation."
       },
+      {
+        heading: "Design Direction",
+        body:
+          "The redesign prioritizes project cards, grouped categories, clean typography, and expandable project documentation."
+      }
     ],
-    gallery: [
-      "assets/img/schem.jpg",
-      "assets/img/topsetup.jpg",
-    "assets/img/frontsetup.jpg",
-    "assets/img/incline.jpg"]
+    gallery: ["assets/img/website.jpg"]
   }
 };
 
@@ -235,7 +234,8 @@ const currentProjects = {
   "water-bottle": {
     title: "Water Bottle Auto-Fill System",
     category: "Current Project",
-    progress: "95%",
+    progress: "30%",
+    documentation: "assets/img/Faucet_Actuation_Documentation.pdf",
     overview:
       "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
     sections: [
@@ -247,12 +247,12 @@ const currentProjects = {
       {
         heading: "Current Status",
         body:
-          "Cycle timing tuning."
+          "Currently printing water bottle mount and servo housing. Prototype testing very soon."
       },
       {
         heading: "Next Steps",
         body:
-          "Documentation."
+          "Measure fill timing; refine servo logic."
       }
     ]
   },
