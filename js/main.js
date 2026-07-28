@@ -235,7 +235,7 @@ const currentProjects = {
     title: "Water Bottle Auto-Fill System",
     category: "Current Project",
     progress: "30%",
-    documentation: "assets/img/Faucet_Actuation_Documentation.pdf",
+    documentation: "assets/img/Faucet  Actuator.pdf",
     overview:
       "Servo-actuated faucet controller for automatically filling a 5-gallon water bottle through timed cycles.",
     sections: [
